@@ -9,6 +9,9 @@ import Header from "@/components/Header";
 export const metadata: Metadata = {
   title: "HarmoniaVita",
   description: "Psihoterapija i savjetovanje",
+  icons: {
+    icon: "/HarmoniaVitaLogo.png",
+  },
 };
 
 export default function RootLayout({
