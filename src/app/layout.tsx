@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
 import Header from "@/components/Header";
-
-
 
 export const metadata: Metadata = {
   title: "HarmoniaVita",
@@ -21,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sr">
-      <body >
+      <body className="antialiased">
         <Header />
-        <main id="site-wrap">
+        <main className="min-h-screen">
           {children}
         </main>
       </body>
