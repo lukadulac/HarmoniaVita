@@ -1,7 +1,47 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 const MirjanaPajic = () => {
-	const [isVisible, setIsVisible] = useState(false);
+	const [open, setOpen] = useState<number | null>(null);
+	const questionsAndAnswers = [
+		{
+			question: "Sistemska porodična terapija — uključuje li individualni rad?",
+			answer:
+				"Iako se naziva porodična sistemska terapija, ovaj pristup nije ograničen samo na rad sa celom porodicom. Može se vrlo uspešno primeniti i kada radim individualno sa vama, uzimajući u obzir vaš sistem — porodicu, odnose, prošlost, kontekst",
+		},
+		{
+			question: "Kako izgleda individualni sistemski rad?",
+			answer: [
+				" Prvo istražujemo vaš sistem — odnose koji su vam važni, dinamike u porodici, očekivanja, uloge koje ste preuzeli (svesno ili nesvesno). I bez da su svi članovi porodice prisutni, sistem “živi” u vašem doživljaju — emocije, očekivanja, obrasci ponašanja koji su se razvili kroz odnose.",
+				"Zatim razmatramo vaš uticaj u sistemu — ono što radite, govorite, osećate i kako to utiče na odnose. U isto vreme istražujemo kako drugi članovi sistema (članovi porodice, partneri, bliski ljudi) utiču na vas.",
+				"Radimo na tome da identifikujemo obrasce — načine komunikacije, reakcije, uloge — koji su vas stezali, blokirali, stvarali napetost; i da onda uvodimo male, konkretne promene u vašem načinu komunikacije, granicama, emocionalnom izrazu.",
+				"Individualni rad može uključiti i da povremeno budu uključeni drugi članovi porodice ako želite — na sesijama ili u delovima procesa — ali nije uslov da rade svi da bi terapija bila efikasna.",
+			],
+		},
+		{
+			question: "Zašto je individualni pristup koristan?",
+			answer: [
+				"Daje siguran prostor da razgovarate o osećanjima i mislima koje možda ne biste lako podelili u porodici.",
+				"Može vam pomoći da bolje razumete svoje mesto i uloge u porodici, da vidite obrasce iz svog iskustva, pa i iz prošlosti, koji su formirali vaše reakcije.",
+				"Može vam pomoći da razvijete veštine — slušanja sebe, izražavanja osećanja, postavljanja granica — koje će kasnije koristiti i u odnosima sa drugima.",
+				"Budući da terapija uzima u obzir vaš širi kontekst (porodica, kultura, istorija), čak i kada radimo sami, možete otkriti uzroke i veze koje možda do sada niste videli. To omogućava dublju, trajniju promenu.",
+			],
+		},
+		{
+			question: "Kako izgleda terapijski proces?",
+			answer: [
+				"Sesije se održavaju redovno – uživo ili online (u trajanju od jednog sata) na koji način vama odgovara.",
+				"U početku obično razgovaramo o onome što vas je dovelo  do trenutka kada ste rekli  “želim nešto promeniti”.",
+				"Postavljamo zajedničke ciljeve – šta želimo da promenimo, koje odnose popravimo, šta da naučimo.",
+				"Tokom terapije koristim različite tehnike – slušanje, vođene razgovore, interaktivne vežbe, zadatke za kod kuće – sve u cilju da ono što radimo u sesiji ima stvarni uticaj i van nje.",
+				"Napredovanje nije uvek linearno – biće uspona i padova. Moje obećanje je da ću biti sa vama/sa vama podrška dok ne počnete da osećate razliku.",
+			],
+		},
+	];
+
+	const toggle = (index: number) => {
+		setOpen(open === index ? null : index);
+	};
 	return (
 		<section className="min-h-screen w-full pt-[120px]">
 			<div className="max-w-[1200px] mx-auto px-6">
@@ -74,7 +114,45 @@ const MirjanaPajic = () => {
 							utiče na one koji su vam bliski, i obrnuto.
 						</strong>
 					</p>
-          {/* TODO: Add questions, image, and style */}
+					{/* TODO: Add  style */}
+					{questionsAndAnswers.map((item, index) => (
+						<div key={index} className="mb-4">
+							<h3
+								className="text-xl font-medium cursor-pointer text-hv-green flex items-center gap-3"
+								onClick={() => toggle(index)}
+							>
+								{item.question}
+								<Image
+									src="/icons/dropdown-arrow.svg"
+									alt="Dropdown Arrow"
+									width={20}
+									height={20}
+									className={`svgColor transition-transform duration-300 ${
+										open === index ? "rotate-180" : ""
+									}`}
+								/>
+							</h3>
+							<div
+								className={`overflow-hidden transition-all duration-500 ease-in-out ${
+									open === index
+										? "max-h-[1000px] opacity-100 mt-2"
+										: "max-h-0 opacity-0"
+								}`}
+							>
+								<div className="pl-4">
+									{Array.isArray(item.answer) ? (
+										<div className="space-y-3">
+											{item.answer.map((ans, i) => (
+												<p key={i}>{ans}</p>
+											))}
+										</div>
+									) : (
+										<p>{item.answer}</p>
+									)}
+								</div>
+							</div>
+						</div>
+					))}
 				</div>
 			</div>
 		</section>

@@ -2,40 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-
-#site-wrap{
-  height: 100%;
+#site-wrap {
+	height: 100%;
 }
 #site-wrap {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
 }
 :root {
-  /* Harmonija Vita paleta */
-  --hv-beige-1: #e3e2dd;
-  --hv-beige-2: #e4e3de;
-  --hv-beige-3: #dfd1c4;
-  --hv-beige-4: #e0d2c5;
-  --hv-beige-5: #e0d2c7;
-  --hv-beige-6: #e1d3c8;
+	/* Harmonija Vita paleta */
+	--hv-beige-1: #e3e2dd;
+	--hv-beige-2: #e4e3de;
+	--hv-beige-3: #dfd1c4;
+	--hv-beige-4: #e0d2c5;
+	--hv-beige-5: #e0d2c7;
+	--hv-beige-6: #e1d3c8;
 
-  /* Akcentne boje iz loga */
-  --hv-gold: #c7a35e;
-  --hv-green: #a9c2a3;
+	/* Akcentne boje iz loga */
+	--hv-gold: #c7a35e;
+	--hv-green: #a9c2a3;
 }
 
-.svg{
-  filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(648%) hue-rotate(248deg) brightness(120%) contrast(100%);
+.svg {
+	filter: brightness(0) saturate(100%) invert(100%) sepia(7%) saturate(648%)
+		hue-rotate(248deg) brightness(120%) contrast(100%);
+}
+.svgColor {
+	filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%)
+		hue-rotate(289deg) brightness(105%) contrast(101%);
 }
 body {
-  background-color: var(--hv-beige-6);
-  font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--hv-beige-6);
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
