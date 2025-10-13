@@ -43,33 +43,54 @@ const MirjanaPajic = () => {
 		setOpen(open === index ? null : index);
 	};
 	return (
+		// TODO: SREDITI BOJE VIDETI STA TREBA DA SE BOLDUJE, BG-COLOR OBAVEZNO SREDITI
 		<section className="min-h-screen w-full pt-[120px]">
 			<div className="max-w-[1200px] mx-auto px-6">
-				<h1 className="text-4xl font-semibold text-hv-green mb-4">
-					Mirjana Pajic
-				</h1>
-				<div>
-					<p>
-						Ja sam Mirjana Pajić, majka, pedagog, porodični psihoterapet,
-						regresoterapeut, kouč psihosomatike.
-					</p>
-					<p>Obrazovanje:</p>
-					<p>
-						Studije pedagogije sam završila na Filozofskom fakultetu u Novom
-						Sadu.
-					</p>
-					<p>
-						Sistemsku porodičnu psihoterapiju sam završila – U OKVIRU
-						ASOCIJACIJA SISTEMSKIH TERAPEUTA EVROPSKI AKREDITOVAN INSTITUTA ZA
-						EDUKACIJU IZ PSIHOTERAPIJE (EAPTT)ČLAN KOMORE TRENING INSTITUTA
-						EVROPSKE ASOCIJACIJE ZA PORODIČNU TERAPIJU (EFTA -TTC) BEOGRAD,
-						SRBIJA
-					</p>
-					<p>Nehipnotičku regresoterapiju po metodi Patrika Balinta</p>
-					<p>
-						Osnovnu i naprednu psihosomatiku kao za koča psihosomatike kod Vesne
-						Danilovac ICI, Berlin
-					</p>
+				<section className="rounded-lg  flex flex-col items-center md:flex-row p-4 md:justify-between">
+					<div className="w-full md:w-1/2 space-y-4">
+						<h1 className="text-4xl font-semibold text-hv-green mb-4">
+							Mirjana Pajic
+						</h1>
+						<p className="font-semibold">
+							Ja sam Mirjana Pajić, majka, pedagog, porodični psihoterapet,
+							regresoterapeut, kouč psihosomatike.
+						</p>
+					</div>
+					<div>
+						<Image
+							src="/placeholder.png"
+							alt="Mirjana Pajic"
+							width={200}
+							height={200}
+						/>
+					</div>
+				</section>
+				<hr className="my-2 border border-spacing-1" />
+				<div className="my-4">
+					<div className=" rounded p-2 ">
+						<p className="font-semibold text-hv-green text-xl ">Obrazovanje:</p>
+						<hr className="my-4" />
+						<p className="my-2">
+							<span className="font-semibold">Studije pedagogije</span> sam
+							završila na{" "}
+							<span className="font-semibold">
+								Filozofskom fakultetu u Novom Sadu.
+							</span>
+						</p>
+						<p>
+							{/* {TODO: videti sta treba da se bolduje } */}
+							Sistemsku porodičnu psihoterapiju sam završila – U OKVIRU
+							ASOCIJACIJA SISTEMSKIH TERAPEUTA EVROPSKI AKREDITOVAN INSTITUTA ZA
+							EDUKACIJU IZ PSIHOTERAPIJE (EAPTT)ČLAN KOMORE TRENING INSTITUTA
+							EVROPSKE ASOCIJACIJE ZA PORODIČNU TERAPIJU (EFTA -TTC) BEOGRAD,
+							SRBIJA
+						</p>
+						<p>Nehipnotičku regresoterapiju po metodi Patrika Balinta</p>
+						<p>
+							Osnovnu i naprednu psihosomatiku kao za koča psihosomatike kod
+							Vesne Danilovac ICI, Berlin
+						</p>
+					</div>
 				</div>
 				<div>
 					<p>Verujem da svako ZALUŽUJE DA BUDE DOBRO (u harmoniji sa sobom)</p>
@@ -116,9 +137,12 @@ const MirjanaPajic = () => {
 					</p>
 					{/* TODO: Add  style */}
 					{questionsAndAnswers.map((item, index) => (
-						<div key={index} className="mb-4">
+						<div
+							key={index}
+							className="mt-4 mb-4 border w-full md:w-3/4 border-white rounded-lg p-4"
+						>
 							<h3
-								className="text-xl font-medium cursor-pointer text-hv-green flex items-center gap-3"
+								className="text-xl font-medium cursor-pointer text-hv-green flex items-center justify-between gap-3"
 								onClick={() => toggle(index)}
 							>
 								{item.question}

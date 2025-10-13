@@ -65,10 +65,10 @@ const Header = () => {
 								<Link
 									href="/"
 									className={`relative text-lg font-semibold transition-colors duration-200
-										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green-dark after:left-0 after:-bottom-1 after:transition-all after:duration-300
+										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green after:left-0 after:-bottom-1 after:transition-all after:duration-300
 										${isActive('/') 
-											? 'text-hv-green-dark after:w-full' 
-											: 'text-gray-700 hover:text-hv-green-dark after:w-0 hover:after:w-full'
+											? 'text-hv-green after:w-full' 
+											: 'text-gray-700 hover:text-hv-green after:w-0 hover:after:w-full'
 										}`}
 								>
 									Početna
@@ -78,10 +78,10 @@ const Header = () => {
 								<Link
 									href="/O-nama"
 									className={`relative text-lg font-semibold transition-colors duration-200
-										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green-dark after:left-0 after:-bottom-1 after:transition-all after:duration-300
+										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green after:left-0 after:-bottom-1 after:transition-all after:duration-300
 										${isActive('/O-nama') 
-											? 'text-hv-green-dark after:w-full' 
-											: 'text-gray-700 hover:text-hv-green-dark after:w-0 hover:after:w-full'
+											? 'text-hv-green after:w-full' 
+											: 'text-gray-700 hover:text-hv-green after:w-0 hover:after:w-full'
 										}`}
 								>
 									O nama
@@ -91,10 +91,10 @@ const Header = () => {
 								<Link
 									href="/usluge"
 									className={`relative text-lg font-semibold transition-colors duration-200
-										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green-dark after:left-0 after:-bottom-1 after:transition-all after:duration-300
+										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green after:left-0 after:-bottom-1 after:transition-all after:duration-300
 										${isActive('/usluge') 
-											? 'text-hv-green-dark after:w-full' 
-											: 'text-gray-700 hover:text-hv-green-dark after:w-0 hover:after:w-full'
+											? 'text-hv-green after:w-full' 
+											: 'text-gray-700 hover:text-hv-green after:w-0 hover:after:w-full'
 										}`}
 								>
 									Usluge
@@ -104,10 +104,10 @@ const Header = () => {
 								<Link
 									href="/blog"
 									className={`relative text-lg font-semibold transition-colors duration-200
-										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green-dark after:left-0 after:-bottom-1 after:transition-all after:duration-300
+										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green after:left-0 after:-bottom-1 after:transition-all after:duration-300
 										${isActive('/blog') 
-											? 'text-hv-green-dark after:w-full' 
-											: 'text-gray-700 hover:text-hv-green-dark after:w-0 hover:after:w-full'
+											? 'text-hv-green after:w-full' 
+											: 'text-gray-700 hover:text-hv-green after:w-0 hover:after:w-full'
 										}`}
 								>
 									Blog
@@ -117,10 +117,10 @@ const Header = () => {
 								<Link
 									href="/kontakt"
 									className={`relative text-lg font-semibold transition-colors duration-200
-										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green-dark after:left-0 after:-bottom-1 after:transition-all after:duration-300
+										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green after:left-0 after:-bottom-1 after:transition-all after:duration-300
 										${isActive('/kontakt') 
-											? 'text-hv-green-dark after:w-full' 
-											: 'text-gray-700 hover:text-hv-green-dark after:w-0 hover:after:w-full'
+											? 'text-hv-green after:w-full' 
+											: 'text-gray-700 hover:text-hv-green after:w-0 hover:after:w-full'
 										}`}
 								>
 									Kontakt
