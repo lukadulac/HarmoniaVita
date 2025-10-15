@@ -16,8 +16,13 @@ const config: Config = {
 				"hv-beige-5": "#e0d2c7",
 				"hv-beige-6": "#e1d3c8",
 				"hv-gold": "#c7a35e",
+				"hv-green-text": "#4a624a",
+				"hv-pastel-green": "#a9c2a3",
 				"hv-green": "#70a461",
 				"hv-green-dark": "#8fa98f",
+			},
+			fontFamily: {
+				beau: ["Beau Rivage", "cursive"],
 			},
 		},
 	},

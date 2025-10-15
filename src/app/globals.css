@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+	font-family: "Beau Rivage";
+	src: url("/fonts/BeauRivage-Regular.woff2") format("woff2"),
+		url("/fonts/BeauRivage-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
 
 #site-wrap {
 	height: 100%;
@@ -36,6 +44,7 @@
 body {
 	background-color: var(--hv-beige-6);
 	font-family: Arial, Helvetica, sans-serif;
+	
 }
 
 @layer utilities {
