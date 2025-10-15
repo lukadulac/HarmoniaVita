@@ -3,10 +3,24 @@ const SvetlanaBelancic = () => {
 	return (
 		<section className="min-h-screen w-full pt-[120px]">
 			<div className="max-w-[1200px] mx-auto px-6">
-				<h1 className="text-4xl font-semibold text-hv-green mb-4">
-					Svetlana Belancic
-				</h1>
-				<p className="font-medium text-lg">Psiholog i geštalt terapeut</p>
+				<div className="flex flex-col items-center md:flex-row">
+					<div className="w-full md:w-1/2">
+						<h1 className="text-4xl font-semibold text-hv-green mb-4">
+							Svetlana Belančić
+						</h1>
+						<p className="font-medium text-lg">Psiholog, geštalt terapeut</p>
+					</div>
+					<div className="w-full md:w-1/2 flex justify-center">
+						<Image
+							src="/placeholder.png"
+							alt="Svetlana Belancic"
+							width={200}
+							height={200}
+							className="rounded-lg"
+						/>
+					</div>
+				</div>
+
 				<hr className="my-4 border border-spacing-1" />
 				<section className="bg-hv-beige-1 p-6 rounded-lg flex flex-col md:flex-row gap-6 items-center">
 					<div className="w-full md:w-1/2 space-y-4">
@@ -30,15 +44,6 @@ const SvetlanaBelancic = () => {
 							godina radim kao psihoterapeut – individualno, s parovima i
 							porodicama.
 						</p>
-					</div>
-					<div className="w-full md:w-1/2 flex justify-center">
-						<Image
-							src="/placeholder.png"
-							alt="Svetlana Belancic"
-							width={200}
-							height={200}
-							className="rounded-lg"
-						/>
 					</div>
 				</section>
 				<hr className="my-4 border border-spacing-1" />

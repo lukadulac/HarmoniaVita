@@ -14,7 +14,7 @@ const MirjanaPajic = () => {
 			</div>
 			<div className="  flex-1 flex flex-col">
 				<h1 className="text-lg font-semibold text-hv-green text-start mb-2">
-					Mirjana Pajic
+					Mirjana Pajić
 				</h1>
 				<div className="flex flex-col gap-1  w-full md:flex-row md:justify-between">
 					<p className="text-gray-600 text-start text-wrap">

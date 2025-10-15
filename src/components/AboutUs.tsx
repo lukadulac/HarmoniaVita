@@ -5,7 +5,9 @@ const AboutUs = () => {
 	const [showMore, setShowMore] = useState(false);
 	return (
 		<section className=" max-w-[1200px] w-full mx-auto px-6 py-12">
-			<h2 className="text-4xl font-semibold text-hv-green mb-4">O nama</h2>
+			<h2 className="text-4xl font-semibold text-hv-green mb-4 font-beau">
+				O nama
+			</h2>
 			<p>
 				<strong>Centar HarmonijaVita</strong> je nastao iz naše zajedničke želje
 				da stvorimo prostor u kom se svako može osećati prihvaćeno, sigurno,
@@ -35,6 +37,11 @@ const AboutUs = () => {
 							<li>individualnu psihoterapiju za odrasle,</li>
 							<li>porodičnu i partnersku terapiju.</li>
 						</ul>
+						<p>
+							Verujemo da istinska promena počinje kroz autentičan odnos i
+							razumevanje osobe i upravo to nudimo svakom klijentu koji nam
+							ukaže poverenje
+						</p>
 					</div>
 				</div>
 			</div>

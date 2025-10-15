@@ -14,7 +14,7 @@ const SvetlanaBelancic = () => {
 			</div>
 			<div className="max-w-[250px]  flex-1 flex flex-col">
 				<h1 className="text-lg font-semibold text-hv-green text-start mb-2">
-					Svetlana Belancic
+					Svetlana Belančić
 				</h1>
 				<p className="text-gray-600 text-start">Psiholog i geštalt terapeut</p>
 			</div>
