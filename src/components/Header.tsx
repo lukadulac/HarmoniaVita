@@ -174,7 +174,7 @@ const Header = () => {
 
 			{/* Mobile sidebar meni */}
 			<div
-				className={`fixed top-0 right-0 w-full h-screen z-[90] bg-hv-beige-2 transform transition-transform duration-300 ease-in-out md:hidden ${
+				className={`fixed top-0 right-0 w-full h-screen z-[90] bg-hv-beige-6 transform transition-transform duration-300 ease-in-out md:hidden ${
 					isOpen ? "translate-x-0" : "translate-x-full"
 				}`}
 			>
