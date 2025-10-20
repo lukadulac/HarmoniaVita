@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
 			from: "Contact Form <onboarding@resend.dev>",
 			to: [to],
 			replyTo: from,
-			subject: `New Contact Form: ${subject}`,
+			subject: `New Contact Form: ${senderName}`,
 			html: `
         <!DOCTYPE html>
         <html>
