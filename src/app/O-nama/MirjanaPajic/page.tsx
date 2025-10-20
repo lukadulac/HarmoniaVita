@@ -47,31 +47,37 @@ const MirjanaPajic = () => {
 
 	return (
 		<section className="min-h-screen w-full">
-			<section className="relative h-screen w-full hidden md:block">
-				<div
-					className="absolute inset-0 bg-contain bg-top bg-no-repeat"
-					style={{
-						backgroundImage: "url('/TB-3.JPG')",
-						backgroundSize: "100% auto",
-					}}
-				>
-					{/* Dark overlay for better text readability */}
-					<div className="absolute inset-0 bg-black/20"></div>
-				</div>
+			<section className="relative h-screen w-full hidden md:block overflow-hidden">
+			{/* Gradient Background */}
+			<div className="absolute inset-0 bg-gradient-to-br from-hv-green/50 to-hv-beige-6  "></div>
 
-				{/* Content positioned to account for header */}
-				<div className="relative h-full flex items-center pt-[140px]">
-					<div className="max-w-[1200px] mx-auto px-6 w-full">
-						<h1 className="text-5xl md:text-6xl font-bold text-hv-green mb-6 drop-shadow-2xl font-beau">
+			{/* Content Container */}
+			<div className="relative h-full flex items-center pt-[100px]">
+				<div className="max-w-[1200px] mx-auto px-6 w-full grid md:grid-cols-2 gap-8 items-center">
+					{/* Text Content */}
+					<div className="z-10">
+						<h1 className="text-5xl lg:text-6xl font-bold text-hv-green mb-6 font-beau">
 							Mirjana Pajić
 						</h1>
-						<p className="text-xl md:text-2xl text-white font-semibold max-w-3xl drop-shadow-lg leading-relaxed">
+						<p className="text-xl lg:text-2xl text-white font-semibold max-w-xl leading-relaxed">
 							Ja sam Mirjana Pajić, majka, pedagog, porodični psihoterapeut,
 							regresoterapeut, kouč psihosomatike.
 						</p>
 					</div>
+
+					{/* Image */}
+					<div className="absolute right-0 bottom-0 w-[70%] h-[150dvh]">
+						<Image
+							src="/Mirjana-bg.png"
+							alt="Mirjana Pajić"
+							fill
+							className="object-contain object-bottom"
+							priority
+						/>
+					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
 			{/* Mobile Hero Section with Regular Background */}
 			<section className="md:hidden pt-[120px] bg-hv-beige-6 pb-8">

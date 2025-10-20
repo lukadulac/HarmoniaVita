@@ -1,19 +1,24 @@
 import AboutUs from "@/components/AboutUs";
 import WhoAreWe from "@/components/WhoAreWe";
 import Image from "next/image";
+
 const HomePage = () => {
 	return (
 		<>
-			{" "}
-			<div
-				className="min-h-screen pt-[80px] h-full bg-cover bg-center bg-no-repeat hidden md:block"
-				style={{
-					backgroundImage: "url('/TB-8.JPG')",
-					backgroundSize: "100% auto",
-				}}
-			>
+			{/* Desktop Hero */}
+			<div className="relative min-h-screen pt-[80px] h-full hidden md:block overflow-hidden">
+				{/* Background Image */}
+				<div 
+					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+					style={{
+						backgroundImage: "url('/TB-8.JPG')",
+					}}
+				/>
+				{/* Overlay */}
 				<div className="absolute inset-0 bg-black/10"></div>
-				<section className="max-w-[1200px] mx-auto px-6 text-start mt-[100px]">
+				
+				{/* Content */}
+				<section className="relative z-10 max-w-[1200px] mx-auto px-6 text-start mt-[100px]">
 					<h1 className="text-4xl font-semibold text-hv-green mb-4">
 						Dobrodošli u Psihološki centar <br /> HarmonijaVita
 					</h1>
@@ -27,6 +32,8 @@ const HomePage = () => {
 					</p>
 				</section>
 			</div>
+
+			{/* Mobile Hero */}
 			<section className="md:hidden pt-[120px] bg-hv-beige-6 pb-8">
 				<div className="max-w-[1200px] mx-auto px-6">
 					<h1 className="text-4xl font-bold text-hv-green mb-4 font-beau">
@@ -51,9 +58,8 @@ const HomePage = () => {
 					</div>
 				</div>
 			</section>
-			{/* <AboutUs /> */}
+
 			<AboutUs />
-			{/* <WhoAreWe /> */}
 			<WhoAreWe />
 		</>
 	);

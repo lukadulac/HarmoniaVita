@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const MirjanaPajic = () => {
 	return (
-		<article className="border p-4 bg-hv-beige-3 rounded-lg shadow-md  w-full h-full flex flex-col">
-			<div className="mb-4 w-full relative aspect-square">
+		<article className="border p-3 bg-hv-beige-3 rounded-lg shadow-md w-full  flex flex-col">
+			<div className="mb-3 w-full relative aspect-[4/3]">
 				<Image
 					className="object-cover rounded-lg"
 					src="/TB-3.JPG"
@@ -13,15 +13,15 @@ const MirjanaPajic = () => {
 				/>
 			</div>
 			<div className="flex-1 flex flex-col">
-				<h1 className="text-lg font-semibold text-hv-green text-start mb-2">
+				<h1 className="text-base font-semibold text-hv-green text-start mb-1.5">
 					Mirjana Pajić
 				</h1>
 				<div className="flex flex-col gap-1 w-full md:flex-row md:justify-between">
-					<p className="text-gray-600 text-start text-wrap">
+					<p className="text-gray-600 text-start text-wrap text-sm">
 						Majka, pedagog, porodični psihoterapet, regresoterapeut, kouč
 						psihosomatike
 					</p>
-					<p className="text-hv-gold">
+					<p className="text-hv-gold text-sm">
 						<i>Ljubitelj ljudi i dobroga u njima. </i>
 					</p>
 				</div>

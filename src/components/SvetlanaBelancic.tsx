@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const SvetlanaBelancic = () => {
 	return (
-		<article className="border p-4 rounded-lg shadow-md w-full h-full flex flex-col">
-			<div className="mb-4 w-full relative aspect-square">
+		<article className="border p-3 rounded-lg shadow-md w-full h-full flex flex-col">
+			<div className="mb-3 w-full relative aspect-[4/3]">
 				<Image
 					className="object-cover rounded-lg"
 					src="/TB-7.JPG"
@@ -13,10 +13,10 @@ const SvetlanaBelancic = () => {
 				/>
 			</div>
 			<div className="flex-1 flex flex-col">
-				<h1 className="text-lg font-semibold text-hv-green text-start mb-2">
+				<h1 className="text-base font-semibold text-hv-green text-start mb-1.5">
 					Svetlana Belančić
 				</h1>
-				<p className="text-gray-600 text-start">Psiholog i geštalt terapeut</p>
+				<p className="text-gray-600 text-start text-sm">Psiholog i geštalt terapeut</p>
 			</div>
 		</article>
 	);
