@@ -111,7 +111,7 @@ const ContactPage: React.FC = () => {
 					</p>
 				</div>
 
-				{/* Main Grid - Form and Map */}
+				
 				<div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
 					{/* Contact Form Card */}
 					<div className="bg-white rounded-xl lg:rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8">
@@ -152,7 +152,7 @@ const ContactPage: React.FC = () => {
 									</div>
 								</div>
 
-								{/* User Information */}
+								
 								<div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
 									<div>
 										<label className="block text-sm font-medium text-slate-700 mb-2">
@@ -184,7 +184,7 @@ const ContactPage: React.FC = () => {
 									</div>
 								</div>
 
-								{/* Message */}
+								
 								<div>
 									<label className="block text-sm font-medium text-slate-700 mb-2">
 										Poruka *
@@ -200,14 +200,14 @@ const ContactPage: React.FC = () => {
 									/>
 								</div>
 
-								{/* Error Message */}
+								
 								{submitStatus === "error" && (
 									<div className="bg-red-50 border border-red-200 text-red-700 px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base">
 										Slanje poruke nije uspelo. Molimo pokušajte ponovo.
 									</div>
 								)}
 
-								{/* Submit Button */}
+								
 								<button
 									type="submit"
 									disabled={isSubmitting}
@@ -229,7 +229,7 @@ const ContactPage: React.FC = () => {
 						)}
 					</div>
 
-					{/* Google Maps Card */}
+					
 					<div className="bg-white rounded-xl lg:rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8 flex flex-col">
 						<h2 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 sm:mb-6">
 							Naša Lokacija
