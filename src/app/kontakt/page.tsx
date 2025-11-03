@@ -1,7 +1,6 @@
 "use client";
-
 import React, { useState } from "react";
-import { Mail, Phone, Send, Loader2, CheckCircle } from "lucide-react";
+import { Send, Loader2, CheckCircle } from "lucide-react";
 import DropDownSelect from "@/components/DropDownSelect";
 
 interface Psychologist {
@@ -35,13 +34,13 @@ const ContactPage: React.FC = () => {
 		{
 			id: 1,
 			name: "Mirjana Pajić",
-			email: "Mirjanapajic@gmail.com",
+			email: "mirjanapajic40@gmail.com",
 			phone: "+381 064 123 4567",
 		},
 		{
 			id: 2,
 			name: "Svetlana Belančić",
-			email: "svetlanabelanci@gmail.com",
+			email: "lukadulac4@gmail.com",
 			phone: "+381 064 123 4568",
 		},
 	];

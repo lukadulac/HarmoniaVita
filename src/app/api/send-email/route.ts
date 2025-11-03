@@ -1,45 +1,54 @@
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 import { NextRequest, NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 interface EmailRequest {
-	to: string;
-	contactName: string;
-	from: string;
-	senderName: string;
-	subject: string;
-	message: string;
+    to: string;
+    contactName: string;
+    from: string;
+    senderName: string;
+    message: string;
 }
 
 export async function POST(request: NextRequest) {
-	try {
-		const body: EmailRequest = await request.json();
-		const { to, contactName, from, senderName, subject, message } = body;
+    try {
+        const body: EmailRequest = await request.json();
+        const { to, contactName, from, senderName, message } = body;
 
-		// Validate required fields
-		if (!to || !contactName || !from || !senderName || !message) {
-			return NextResponse.json(
-				{ error: "Unesite sva obavezna polja" },
-				{ status: 400 }
-			);
-		}
+        // Validate required fields
+        if (!to || !contactName || !from || !senderName || !message) {
+            return NextResponse.json(
+                { error: "Unesite sva obavezna polja" },
+                { status: 400 }
+            );
+        }
 
-		// Validate email format
-		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		if (!emailRegex.test(from) || !emailRegex.test(to)) {
-			return NextResponse.json(
-				{ error: "Invalid email format" },
-				{ status: 400 }
-			);
-		}
+        // Validate email format
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(from) || !emailRegex.test(to)) {
+            return NextResponse.json(
+                { error: "Invalid email format" },
+                { status: 400 }
+            );
+        }
 
-		const data = await resend.emails.send({
-			from: "Contact Form <onboarding@resend.dev>",
-			to: [to],
-			replyTo: from,
-			subject: `New Contact Form: ${senderName}`,
-			html: `
+        // Create transporter with your email service
+        const transporter = nodemailer.createTransport({
+            host: process.env.SMTP_HOST, // e.g., "smtp.gmail.com"
+            port: parseInt(process.env.SMTP_PORT || "587"),
+            secure: process.env.SMTP_SECURE === "true", // true for 465, false for other ports
+            auth: {
+                user: process.env.SMTP_USER, // Your email address
+                pass: process.env.SMTP_PASS, // Your email password or app password
+            },
+        });
+
+        // Send email
+        const info = await transporter.sendMail({
+            from: `"Contact Form" <${process.env.SMTP_USER}>`,
+            to: to,
+            replyTo: from,
+            subject: `New Contact Form: ${senderName}`,
+            html: `
         <!DOCTYPE html>
         <html>
           <head>
@@ -84,7 +93,7 @@ export async function POST(request: NextRequest) {
           <body>
             <div class="container">
               <div class="header">
-                <h2 style="margin: 0;">Poruka za  ${contactName}</h2>
+                <h2 style="margin: 0;">Poruka za ${contactName}</h2>
               </div>
               <div class="content">
                 <div class="field">
@@ -105,16 +114,19 @@ export async function POST(request: NextRequest) {
           </body>
         </html>
       `,
-		});
+        });
 
-		return NextResponse.json({ success: true, data }, { status: 200 });
-	} catch (error) {
-		console.error("Error sending email:", error);
-		return NextResponse.json(
-			{
-				error: error instanceof Error ? error.message : "Failed to send email",
-			},
-			{ status: 500 }
-		);
-	}
+        return NextResponse.json(
+            { success: true, messageId: info.messageId },
+            { status: 200 }
+        );
+    } catch (error) {
+        console.error("Error sending email:", error);
+        return NextResponse.json(
+            {
+                error: error instanceof Error ? error.message : "Failed to send email",
+            },
+            { status: 500 }
+        );
+    }
 }
