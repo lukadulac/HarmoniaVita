@@ -40,7 +40,7 @@ const ContactPage: React.FC = () => {
 		{
 			id: 2,
 			name: "Svetlana Belančić",
-			email: "lukadulac4@gmail.com",
+			email: "svetlanabelancic@gmail.com",
 			phone: "+381 064 123 4568",
 		},
 	];
