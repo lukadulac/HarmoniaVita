@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const MirjanaPajic = () => {
 	const [open, setOpen] = useState<number | null>(null);
@@ -48,38 +49,38 @@ const MirjanaPajic = () => {
 	return (
 		<section className="min-h-screen w-full">
 			<section className="relative h-screen w-full hidden md:block overflow-hidden">
-			{/* Gradient Background */}
-			<div className="absolute inset-0 bg-gradient-to-br from-hv-green/50 to-hv-beige-6  "></div>
+				<div className="absolute inset-0 bg-gradient-to-br from-hv-green/50 to-hv-beige-6  "></div>
 
-			{/* Content Container */}
-			<div className="relative h-full flex items-center pt-[100px]">
-				<div className="max-w-[1200px] mx-auto px-6 w-full grid md:grid-cols-2 gap-8 items-center">
-					{/* Text Content */}
-					<div className="z-10">
-						<h1 className="text-5xl lg:text-6xl font-bold text-hv-green mb-6 font-beau">
-							Mirjana Pajić
-						</h1>
-						<p className="text-xl lg:text-2xl text-white font-semibold max-w-xl leading-relaxed">
-							Ja sam Mirjana Pajić, majka, pedagog, porodični psihoterapeut,
-							regresoterapeut, kouč psihosomatike.
-						</p>
-					</div>
+				<div className="relative h-full flex items-center pt-[100px]">
+					<div className="max-w-[1200px] mx-auto px-6 w-full grid md:grid-cols-2 gap-8 items-center">
+						<div className="z-10">
+							<h1 className="text-5xl lg:text-6xl font-bold text-hv-green mb-6 font-beau">
+								Mirjana Pajić
+							</h1>
+							<p className="text-xl lg:text-2xl text-white font-semibold max-w-xl leading-relaxed">
+								Ja sam Mirjana Pajić, majka, pedagog, porodični psihoterapeut,
+								regresoterapeut, kouč psihosomatike.
+							</p>
+							<button className="bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">
+								<Link href="/kontakt?psych=Mirjana%20Pajić">
+									Kontaktiraj me
+								</Link>
+							</button>
+						</div>
 
-					{/* Image */}
-					<div className="absolute right-0 bottom-0 w-[70%] h-[150dvh]">
-						<Image
-							src="/Mirjana-bg.png"
-							alt="Mirjana Pajić"
-							fill
-							className="object-contain object-bottom"
-							priority
-						/>
+						<div className="absolute right-0 bottom-0 w-[70%] h-[150dvh]">
+							<Image
+								src="/Mirjana-bg.png"
+								alt="Mirjana Pajić"
+								fill
+								className="object-contain object-bottom"
+								priority
+							/>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-			{/* Mobile Hero Section with Regular Background */}
 			<section className="md:hidden pt-[120px] bg-hv-beige-6 pb-8">
 				<div className="max-w-[1200px] mx-auto px-6">
 					<h1 className="text-4xl font-bold text-hv-green mb-4 font-beau">
@@ -90,7 +91,6 @@ const MirjanaPajic = () => {
 						regresoterapeut, kouč psihosomatike.
 					</p>
 
-					{/* Image with cool border on mobile */}
 					<div className="relative w-full max-w-md mx-auto">
 						<div className="absolute inset-0 bg-gradient-to-br from-hv-green to-hv-gold rounded-2xl transform rotate-3"></div>
 						<div className="relative bg-white p-2 rounded-2xl shadow-xl">
@@ -107,52 +107,53 @@ const MirjanaPajic = () => {
 				</div>
 			</section>
 
-			{/* Content Section */}
-			<div className="">
-				<div className="max-w-[1200px] mx-auto px-6 py-12">
-					{/* Education Section */}
-					<div className="my-12">
-						<div className="rounded-lg">
-							<h2 className="font-bold text-hv-green text-3xl mb-6">
-								Obrazovanje:
-							</h2>
-							<hr className="my-4 border-slate-300" />
-							<div className="space-y-4 text-slate-700 leading-relaxed">
-								<p>
-									<span className="font-semibold">Studije pedagogije</span> sam
-									završila na{" "}
-									<span className="font-semibold">
-										Filozofskom fakultetu u Novom Sadu.
-									</span>
-								</p>
-								<p>
-									<span className="font-semibold">
-										Sistemsku porodičnu psihoterapiju
-									</span>{" "}
-									sam završila – U OKVIRU ASOCIJACIJA SISTEMSKIH TERAPEUTA
-									EVROPSKI AKREDITOVAN INSTITUTA ZA EDUKACIJU IZ PSIHOTERAPIJE
-									(EAPTT) ČLAN KOMORE TRENING INSTITUTA EVROPSKE ASOCIJACIJE ZA
-									PORODIČNU TERAPIJU (EFTA -TTC) BEOGRAD, SRBIJA
-								</p>
-								<p>
-									<span className="font-semibold">
-										Nehipnotičku regresoterapiju
-									</span>{" "}
-									po metodi Patrika Balinta
-								</p>
-								<p>
-									<span className="font-semibold">
-										Osnovnu i naprednu psihosomatiku
-									</span>{" "}
-									kao za koča psihosomatike kod Vesne Danilovac ICI, Berlin
-								</p>
-							</div>
-						</div>
+			<section className="  mx-auto px-6 p-16 space-y-2">
+				<div className="max-w-[1200px] mx-auto text-center">
+					<h2 className="text-5xl text-hv-green font-beau text-center font-semibold mb-2">
+						Obrazovanje
+					</h2>
+					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
+					<div className="text-slate-700 text-lg max-w-3xl mx-auto space-y-4 text-left leading-relaxed">
+						<p>
+							<span className="font-semibold">Studije pedagogije</span> sam
+							završila na{" "}
+							<span className="font-semibold text-hv-green">
+								Filozofskom fakultetu u Novom Sadu.
+							</span>
+						</p>
+						<p>
+							<span className="font-semibold text-hv-green">
+								Sistemsku porodičnu psihoterapiju
+							</span>{" "}
+							sam završila – U OKVIRU ASOCIJACIJA SISTEMSKIH TERAPEUTA EVROPSKI
+							AKREDITOVAN INSTITUTA ZA EDUKACIJU IZ PSIHOTERAPIJE (EAPTT) ČLAN
+							KOMORE TRENING INSTITUTA EVROPSKE ASOCIJACIJE ZA PORODIČNU
+							TERAPIJU (EFTA -TTC) BEOGRAD, SRBIJA
+						</p>
+						<p>
+							<span className="font-semibold">
+								Nehipnotičku regresoterapiju
+							</span>{" "}
+							po metodi Patrika Balinta
+						</p>
+						<p>
+							<span className="font-semibold">
+								Osnovnu i naprednu psihosomatiku
+							</span>{" "}
+							kao za koča psihosomatike kod Vesne Danilovac ICI, Berlin
+						</p>
 					</div>
+				</div>
+			</section>
 
-					{/* Philosophy Section */}
-					<div className="space-y-6 text-slate-700 mb-12 leading-relaxed">
-						<p className="text-xl font-semibold text-hv-green">
+			<section className="bg-hv-beige-1 mx-auto px-6 p-16 space-y-2">
+				<div className="max-w-[1200px] mx-auto text-center">
+					<h2 className="text-5xl font-semibold text-hv-green font-beau text-center my-2">
+						Moj pristup
+					</h2>
+					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
+					<div className="text-slate-700 text-lg leading-relaxed space-y-4">
+						<p className="font-semibold text-hv-green">
 							Verujem da svako ZASLUŽUJE DA BUDE DOBRO (u harmoniji sa sobom)
 						</p>
 						<p>
@@ -166,15 +167,21 @@ const MirjanaPajic = () => {
 							dalje i onda polako rešavaš ono za šta trenutno imaš snage… i tako
 							kreneš kroz proces…veruj nije jednostavno.
 						</p>
-						<p className="text-lg font-semibold">
+						<p className="font-semibold">
 							Promena je moguća — korak po korak, tempom koji odgovara vama.
 						</p>
 					</div>
+				</div>
+			</section>
 
-					{/* Work Section */}
-					<div className="space-y-6 text-slate-700 mb-12 leading-relaxed">
-						<h2 className="text-3xl font-bold text-hv-green mb-6">Moj rad</h2>
-						<p className="text-lg font-semibold">
+			<section className="mx-auto px-6 p-16 space-y-2 ">
+				<div className="max-w-[1200px] mx-auto text-center">
+					<h2 className="text-5xl font-semibold text-hv-green font-beau my-2">
+						Moj rad
+					</h2>
+					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
+					<div className="text-slate-700 text-lg leading-relaxed space-y-2 text-left max-w-3xl mx-auto">
+						<p className="font-semibold text-hv-green">
 							Posao psihoterapeuta obavljam s ljubavlju verući da sa ljubavlju
 							možeš puno, a bez nje ništa.
 						</p>
@@ -187,60 +194,76 @@ const MirjanaPajic = () => {
 							Verujem da svaki glas zaslužuje da bude saslušan — i onaj
 							najmlađi, i onaj koji se povukao, i onaj najbučniji.
 						</p>
-						<p className="font-semibold bg-hv-beige-3 p-4 rounded-lg">
+						<p className="font-semibold">
 							Sistemska porodična terapija zasniva se na uverenju da smo svi
-							više nego suma svojih pojedinačnih delova – da su naši odnosi sa
-							porodicom, partnerom, prijateljima i sa našom prošlošću činilac
-							koji oblikuje kako se osećamo, kako reagujemo, kako komuniciramo.
-							Ne radi se samo o tome šta vi osećate, već i kako ono što osećate
-							utiče na one koji su vam bliski, i obrnuto.
+							više nego suma svojih pojedinačnih delova.
+						</p>
+
+						<p className="font-semibold">
+							Naši odnosi sa porodicom, partnerom, prijateljima i sa našom
+							prošlošću predstavljaju činilac koji oblikuje kako se osećamo,
+							kako reagujemo i kako komuniciramo.
+						</p>
+
+						<p className="font-semibold">
+							Ne radi se samo o tome šta vi osećate, već i o tome kako ono što
+							osećate utiče na one koji su vam bliski — i obrnuto.
 						</p>
 					</div>
+				</div>
+			</section>
 
-					{/* TODO: Add  style */}
-					{questionsAndAnswers.map((item, index) => (
-						<div
-							key={index}
-							className="mt-4 mb-4 border w-full md:w-3/4 border-white rounded-lg p-4"
-						>
-							<h3
-								className="text-xl font-medium cursor-pointer text-hv-green flex items-center justify-between gap-3"
-								onClick={() => toggle(index)}
-							>
-								{item.question}
-								<Image
-									src="/icons/dropdown-arrow.svg"
-									alt="Dropdown Arrow"
-									width={20}
-									height={20}
-									className={`svgColor transition-transform duration-300 ${
-										open === index ? "rotate-180" : ""
-									}`}
-								/>
-							</h3>
+			<section className="bg-hv-beige-1 mx-auto px-6 p-16 space-y-2">
+				<div className="max-w-[1200px] mx-auto text-center">
+					<h2 className="text-5xl font-semibold text-hv-green font-beau my-2">
+						Česta pitanja
+					</h2>
+					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
+					<div className="max-w-[1200px] mx-auto">
+						{questionsAndAnswers.map((item, index) => (
 							<div
-								className={`overflow-hidden transition-all duration-500 ease-in-out ${
-									open === index
-										? "max-h-[1000px] opacity-100 mt-2"
-										: "max-h-0 opacity-0"
-								}`}
+								key={index}
+								className="mt-4 mb-4 border w-full md:w-3/4 mx-auto border-white rounded-lg p-4"
 							>
-								<div className="pl-4">
-									{Array.isArray(item.answer) ? (
-										<div className="space-y-3">
-											{item.answer.map((ans, i) => (
-												<p key={i}>{ans}</p>
-											))}
-										</div>
-									) : (
-										<p>{item.answer}</p>
-									)}
+								<h3
+									className="text-xl font-medium cursor-pointer text-hv-green flex items-center justify-between gap-3"
+									onClick={() => toggle(index)}
+								>
+									{item.question}
+									<Image
+										src="/icons/dropdown-arrow.svg"
+										alt="Dropdown Arrow"
+										width={20}
+										height={20}
+										className={`svgColor transition-transform duration-300 ${
+											open === index ? "rotate-180" : ""
+										}`}
+									/>
+								</h3>
+								<div
+									className={`overflow-hidden transition-all duration-500 ease-in-out ${
+										open === index
+											? "max-h-[1000px] opacity-100 mt-2"
+											: "max-h-0 opacity-0"
+									}`}
+								>
+									<div className="pl-4 text-left">
+										{Array.isArray(item.answer) ? (
+											<div className="space-y-3">
+												{item.answer.map((ans, i) => (
+													<p key={i}>{ans}</p>
+												))}
+											</div>
+										) : (
+											<p>{item.answer}</p>
+										)}
+									</div>
 								</div>
 							</div>
-						</div>
-					))}
+						))}
+					</div>
 				</div>
-			</div>
+			</section>
 		</section>
 	);
 };

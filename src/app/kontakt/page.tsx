@@ -1,7 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { Send, Loader2, CheckCircle } from "lucide-react";
 import DropDownSelect from "@/components/DropDownSelect";
+import { useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 
 interface Psychologist {
 	id: number;
@@ -28,7 +30,23 @@ const ContactPage: React.FC = () => {
 	});
 	const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 	const [submitStatus, setSubmitStatus] = useState<SubmitStatus>(null);
+	const searchParams = useSearchParams();
 
+	useEffect(() => {
+		const raw = searchParams.get("psych");
+		if (!raw) return;
+
+		const decoded = decodeURIComponent(raw);
+		const byId = psychologists.find((p) => String(p.id) === decoded);
+		const byName = psychologists.find(
+			(p) => p.name.toLowerCase() === decoded.toLowerCase()
+		);
+		const selectedName = byId?.name ?? byName?.name;
+
+		if (selectedName) {
+			setFormData((prev) => ({ ...prev, psychologist: selectedName }));
+		}
+	}, [searchParams]);
 
 	const psychologists: Psychologist[] = [
 		{
@@ -100,7 +118,6 @@ const ContactPage: React.FC = () => {
 	return (
 		<div className="min-h-screen pt-[120px] sm:pt-[100px] lg:pt-[120px] py-6 sm:py-8 lg:py-12 px-4 bg-gradient-to-br from-hv-green/40 to-hv-beige-6">
 			<div className="max-w-7xl mx-auto">
-				{/* Header */}
 				<div className="text-center mb-6 sm:mb-8">
 					<h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-hv-green font-beau mb-2 sm:mb-3">
 						Kontaktirajte Nas
@@ -110,9 +127,7 @@ const ContactPage: React.FC = () => {
 					</p>
 				</div>
 
-				
 				<div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
-					{/* Contact Form Card */}
 					<div className="bg-white rounded-xl lg:rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8">
 						{submitStatus === "success" ? (
 							<div className="text-center py-8 sm:py-12">
@@ -134,7 +149,6 @@ const ContactPage: React.FC = () => {
 							</div>
 						) : (
 							<form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-								{/* Psychologist Selection */}
 								<div>
 									<label className="block text-sm font-medium text-slate-700 mb-2">
 										Izaberite Psihologa *
@@ -151,7 +165,6 @@ const ContactPage: React.FC = () => {
 									</div>
 								</div>
 
-								
 								<div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
 									<div>
 										<label className="block text-sm font-medium text-slate-700 mb-2">
@@ -183,7 +196,6 @@ const ContactPage: React.FC = () => {
 									</div>
 								</div>
 
-								
 								<div>
 									<label className="block text-sm font-medium text-slate-700 mb-2">
 										Poruka *
@@ -199,14 +211,12 @@ const ContactPage: React.FC = () => {
 									/>
 								</div>
 
-								
 								{submitStatus === "error" && (
 									<div className="bg-red-50 border border-red-200 text-red-700 px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base">
 										Slanje poruke nije uspelo. Molimo pokušajte ponovo.
 									</div>
 								)}
 
-								
 								<button
 									type="submit"
 									disabled={isSubmitting}
@@ -228,7 +238,6 @@ const ContactPage: React.FC = () => {
 						)}
 					</div>
 
-					
 					<div className="bg-white rounded-xl lg:rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8 flex flex-col">
 						<h2 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 sm:mb-6">
 							Naša Lokacija

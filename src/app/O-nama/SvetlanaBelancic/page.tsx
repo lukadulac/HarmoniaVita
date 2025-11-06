@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const SvetlanaBelancic = () => {
 	return (
@@ -19,6 +20,11 @@ const SvetlanaBelancic = () => {
 								Psihoterapija psihosomatike — međunarodna asocijacija za
 								integralnu kauzalnu psihoterapiju
 							</p>
+							<button className="bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">
+								<Link href="/kontakt?psych=Svetlana%20Belan%C4%8Di%C4%87">
+									Kontaktiraj me
+								</Link>
+							</button>
 						</div>
 
 						<div className="absolute right-0 bottom-0 w-[70%] h-[150dvh]">
