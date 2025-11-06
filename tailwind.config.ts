@@ -19,6 +19,7 @@ const config: Config = {
 				"hv-green-text": "#4a624a",
 				"hv-pastel-green": "#a9c2a3",
 				"hv-green": "#70a461",
+				"hv-green-hover": "#38622c",
 				"hv-green-dark": "#8fa98f",
 			},
 			fontFamily: {
