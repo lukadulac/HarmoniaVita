@@ -15,7 +15,7 @@ const HomePage = () => {
 				<section className="relative z-10 max-w-[1200px] mx-auto px-6">
 					<div className="grid grid-cols-2 gap-10 items-center py-16">
 						<div>
-							<h1 className="text-5xl font-semibold text-hv-green  font-beau leading-tight mb-6">
+							<h1 className="text-4xl font-semibold text-hv-green  font-beau leading-tight mb-6">
 								Dobrodošli u Psihološki centar HarmonijaVita
 							</h1>
 							<p className="text-lg text-white/90 max-w-xl mb-3">

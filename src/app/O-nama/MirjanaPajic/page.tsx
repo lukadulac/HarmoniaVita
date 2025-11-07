@@ -86,10 +86,13 @@ const MirjanaPajic = () => {
 					<h1 className="text-4xl font-bold text-hv-green mb-4 font-beau">
 						Mirjana Pajić
 					</h1>
-					<p className="text-lg text-slate-700 font-semibold mb-6">
+					<p className="text-lg text-slate-700 font-semibold mb-4">
 						Ja sam Mirjana Pajić, majka, pedagog, porodični psihoterapeut,
 						regresoterapeut, kouč psihosomatike.
 					</p>
+					<button className="mb-4 bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">
+						<Link href="/kontakt?psych=Mirjana%20Pajić">Kontaktiraj me</Link>
+					</button>
 
 					<div className="relative w-full max-w-md mx-auto">
 						<div className="absolute inset-0 bg-gradient-to-br from-hv-green to-hv-gold rounded-2xl transform rotate-3"></div>
@@ -213,7 +216,7 @@ const MirjanaPajic = () => {
 				</div>
 			</section>
 
-			<section className="bg-hv-beige-1 mx-auto px-6 p-16 space-y-2">
+			<section className="bg-hv-beige-1 mx-auto px-6 p-16  space-y-2">
 				<div className="max-w-[1200px] mx-auto text-center">
 					<h2 className="text-5xl font-semibold text-hv-green font-beau my-2">
 						Česta pitanja
@@ -223,7 +226,7 @@ const MirjanaPajic = () => {
 						{questionsAndAnswers.map((item, index) => (
 							<div
 								key={index}
-								className="mt-4 mb-4 border w-full md:w-3/4 mx-auto border-white rounded-lg p-4"
+								className="mt-4 mb-4 border w-full md:w-3/4 mx-auto border-hv-green rounded-lg p-4"
 							>
 								<h3
 									className="text-xl font-medium cursor-pointer text-hv-green flex items-center justify-between gap-3"
