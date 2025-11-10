@@ -1,4 +1,5 @@
 import AboutUs from "@/components/AboutUs";
+import PsiholoskeTeme from "@/components/PsiholoskeTeme";
 import WhoAreWe from "@/components/WhoAreWe";
 import Image from "next/image";
 import Link from "next/link";
@@ -76,6 +77,7 @@ const HomePage = () => {
 
 			<AboutUs />
 			<WhoAreWe />
+			<PsiholoskeTeme />
 		</>
 	);
 };
