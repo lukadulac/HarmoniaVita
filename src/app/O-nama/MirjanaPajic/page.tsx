@@ -70,6 +70,7 @@ const MirjanaPajic = () => {
 
 						<div className="absolute right-0 bottom-0 w-[70%] h-[150dvh]">
 							<Image
+								title="Mirjana Pajic img"
 								src="/Mirjana-bg.png"
 								alt="Mirjana Pajić"
 								fill
@@ -99,6 +100,7 @@ const MirjanaPajic = () => {
 						<div className="relative bg-white p-2 rounded-2xl shadow-xl">
 							<div className="relative aspect-square rounded-xl overflow-hidden">
 								<Image
+									title="Mirjana Pajic"
 									src="/TB-3.JPG"
 									alt="Mirjana Pajić"
 									fill
@@ -234,6 +236,7 @@ const MirjanaPajic = () => {
 								>
 									{item.question}
 									<Image
+										title="Dropdown Arrow"
 										src="/icons/dropdown-arrow.svg"
 										alt="Dropdown Arrow"
 										width={20}

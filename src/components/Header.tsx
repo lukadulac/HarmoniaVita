@@ -48,6 +48,7 @@ const Header = () => {
 				<div className="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
 					<Link href="/" className="flex items-center gap-2" onClick={closeMenu}>
 						<Image
+							title="Logo"
 							src="/HarmoniaVitaLogo.png"
 							alt="Logo"
 							width={80}
@@ -142,6 +143,7 @@ const Header = () => {
 										}`}
 								>
 									<Image
+										title="Mobile menu"
 										src="/icons/mobile-menu.svg"
 										alt="Menu"
 										width={24}
@@ -156,6 +158,7 @@ const Header = () => {
 										}`}
 								>
 									<Image
+										title="Close mobile menu"
 										src="/icons/close-svgrepo-com.svg"
 										alt="Close menu"
 										width={24}

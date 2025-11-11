@@ -42,7 +42,7 @@ const PsiholoskeTeme = () => {
 			],
 		},
 		{
-			theme: "Zajednički rad tela i duše",
+			theme: "Zajednički rad tela i psihe",
 			themeDecs: [
 				"Psihosomatski pristup podrazumeva sagledavanje čoveka kao celine.",
 				"Zato se u lečenju često kombinuju medicinski i psihološki pristupi: lekari, psiholozi i psihoterapeuti zajedno pomažu da se razume i telo i psiha.",
@@ -75,16 +75,16 @@ const PsiholoskeTeme = () => {
 		<>
 			<section className="pt-12 pb-8 bg-hv-beige-1 w-full text-center">
 				<div className="max-w-[1200px] mx-auto space-y-2 px-6">
-					<h1 className="text-5xl font-beau text-hv-green font-semibold ">
+					<h2 className="text-5xl font-beau text-hv-green font-semibold ">
 						Psiholoske teme
-					</h1>
+					</h2>
 					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
 					<div className="mb-4 space-y-2">
 						<p>
 							Koliko puta ste osetili da vas nešto „boli“, a lekari kažu da je
 							sve u redu?
 						</p>
-						<p>Možda tada ne govori telo već duša.</p>
+						<p>Možda tada ne govori telo već psiha.</p>
 
 						<p>Često zaboravljamo da telo i psiha ne funkcionišu odvojeno.</p>
 						<p>
@@ -92,7 +92,7 @@ const PsiholoskeTeme = () => {
 							uzrok.
 						</p>
 						<p>
-							Ali kada boli duša – ćutimo, guramo osećanja po strani i
+							Ali kada boli duša ćutimo, guramo osećanja po strani i
 							nastavljamo dalje.
 						</p>
 						<p>
@@ -112,6 +112,7 @@ const PsiholoskeTeme = () => {
 							>
 								{topic.theme}
 								<Image
+									title="Dropdown Arrow"
 									src="/icons/dropdown-arrow.svg"
 									alt="Dropdown Arrow"
 									width={24}

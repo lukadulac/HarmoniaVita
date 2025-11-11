@@ -11,6 +11,7 @@ const Footer = () => {
 					<div className="flex items-center gap-3">
 						<div className="relative w-[80px] h-[80px]">
 							<Image
+								title="HarmonijaVita logo"
 								src="/HarmoniaVitaLogo.png"
 								alt="HarmoniaVita"
 								className="object-contain"

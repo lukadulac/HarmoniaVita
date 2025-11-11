@@ -29,6 +29,7 @@ const SvetlanaBelancic = () => {
 
 						<div className="absolute right-0 bottom-0 w-[70%] h-[150dvh]">
 							<Image
+								title="Svetlana Belančić img"
 								src="/svetlana3.png"
 								alt="Svetlana Belančić"
 								fill
@@ -58,6 +59,7 @@ const SvetlanaBelancic = () => {
 						<div className="relative bg-white p-2 rounded-2xl shadow-xl">
 							<div className="relative aspect-square rounded-xl overflow-hidden">
 								<Image
+									title="Svetlana Belančić"
 									src="/TB-7.JPG"
 									alt="Svetlana Belančić"
 									fill

@@ -33,6 +33,7 @@ const HomePage = () => {
 						</div>
 						<div className="flex justify-end">
 							<Image
+								title="Centar HarmonijaVita logo"
 								src="/harmonijavita-logo.png"
 								alt="Harmonia Vita"
 								width={700}
@@ -64,6 +65,7 @@ const HomePage = () => {
 					</button>
 					<div className="flex justify-center">
 						<Image
+							title="Centar HarmonijaVita logo"
 							src="/harmonijavita-logo.png"
 							alt="Harmonia Vita"
 							width={600}

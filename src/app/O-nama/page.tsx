@@ -66,6 +66,7 @@ const AboutUs = () => {
 					<div className="w-full lg:w-1/2">
 						<div className="relative w-full h-[300px] sm:h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-xl">
 							<Image
+								title="Centar HarmonijaVita"
 								src="/prostor.JPG"
 								alt="Centar HarmonijaVita"
 								fill
