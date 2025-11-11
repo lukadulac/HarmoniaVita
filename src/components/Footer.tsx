@@ -1,23 +1,34 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+	const pathname = usePathname();
+
+	const checkIfHomePage = () => {
+		if (pathname === "/") {
+			scrollTo({ top: 0, behavior: "smooth" });
+		} else {
+			window.location.href = "/";
+		}
+	};
+
 	return (
 		<footer className="bg-gradient-to-br from-hv-green/40 to-hv-beige-6 ">
 			<div className="max-w-[1200px] mx-auto px-6 py-12">
-				{/* Top row */}
 				<div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-					{/* Brand */}
 					<div className="flex items-center gap-3">
 						<div className="relative w-[80px] h-[80px]">
 							<Image
 								title="HarmonijaVita logo"
 								src="/HarmoniaVitaLogo.png"
 								alt="HarmoniaVita"
-								className="object-contain"
+								className="object-contain cursor-pointer"
 								width={80}
 								height={80}
 								priority
+								onClick={checkIfHomePage}
 							/>
 						</div>
 						<div>
@@ -48,7 +59,6 @@ const Footer = () => {
 						</Link>
 					</nav>
 
-					{/* Call-to-action */}
 					<div className="shrink-0">
 						<Link
 							href="/kontakt"
@@ -61,23 +71,14 @@ const Footer = () => {
 
 				<hr className="my-8 border-hv-beige-3/60" />
 
-				{/* Bottom row */}
 				<div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
 					<p className="text-sm text-slate-700">
 						&copy; {new Date().getFullYear()} HarmonijaVita. Sva prava zadržana.
 					</p>
 
-					{/* Simple info block */}
 					<div className="text-sm text-slate-700 space-y-1">
 						<p className="font-medium text-hv-green">Lokacija</p>
 						<p>Subotica, Srbija</p>
-						<p className="font-medium text-hv-green mt-3">Email</p>
-						<a
-							href="mailto:info@harmoniavita.rs"
-							className="hover:text-hv-green transition-colors"
-						>
-							info@harmoniavita.rs
-						</a>
 					</div>
 				</div>
 			</div>

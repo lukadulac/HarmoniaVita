@@ -9,12 +9,9 @@ const WhoAreWe = () => {
 					Ko smo mi?
 				</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-					<Link href="/O-nama/MirjanaPajic">
-						<MirjanaPajic />
-					</Link>
-					<Link href="/O-nama/SvetlanaBelancic">
-						<SvetlanaBelancic />
-					</Link>
+					<MirjanaPajic />
+
+					<SvetlanaBelancic />
 				</div>
 			</div>
 		</section>
