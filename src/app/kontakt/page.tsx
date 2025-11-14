@@ -21,6 +21,21 @@ interface FormData {
 
 type SubmitStatus = "success" | "error" | null;
 
+const psychologists: Psychologist[] = [
+	{
+		id: 1,
+		name: "Mirjana Pajić",
+		email: "mirjanapajic40@gmail.com",
+		phone: "+381 064 123 4567",
+	},
+	{
+		id: 2,
+		name: "Svetlana Belančić",
+		email: "svetlanabelancic@gmail.com",
+		phone: "+381 064 123 4568",
+	},
+];
+
 const ContactPage: React.FC = () => {
 	const [formData, setFormData] = useState<FormData>({
 		psychologist: "",
@@ -48,20 +63,7 @@ const ContactPage: React.FC = () => {
 		}
 	}, [searchParams]);
 
-	const psychologists: Psychologist[] = [
-		{
-			id: 1,
-			name: "Mirjana Pajić",
-			email: "mirjanapajic40@gmail.com",
-			phone: "+381 064 123 4567",
-		},
-		{
-			id: 2,
-			name: "Svetlana Belančić",
-			email: "svetlanabelancic@gmail.com",
-			phone: "+381 064 123 4568",
-		},
-	];
+
 
 	const handleInputChange = (
 		e: React.ChangeEvent<
