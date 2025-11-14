@@ -30,7 +30,7 @@ const AboutUs = () => {
 							promenu, plaši se da izađe iz zone konfora, iz okruženja koje mu
 							je poznato, koje mu se čini bezbedno, u kom funkcioniše na svoj
 							ustaljeni način. Ma koliko ga cela situacija pritiska i opterećuje
-							koristi poznate, za njega sigurne mehanizme „preživljavanja".
+							koristi poznate, za njega sigurne mehanizme &#34;preživljavanja&#34;.
 						</p>
 						<p>
 							Promena se bojimo, ostajemo dugo zaglavljeni u mestu bez snage da

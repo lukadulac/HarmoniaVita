@@ -1,6 +1,6 @@
 import MirjanaPajic from "./MirjanaPajic";
 import SvetlanaBelancic from "./SvetlanaBelancic";
-import Link from "next/link";
+
 const WhoAreWe = () => {
 	return (
 		<section className="who-we-are  w-full ">

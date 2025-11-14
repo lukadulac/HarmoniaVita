@@ -145,7 +145,7 @@ const SvetlanaBelancic = () => {
 						</p>
 						<p>
 							Kroz razgovor, osvešćivanje i istraživanje vaših emocija i
-							potreba, zajedno otkrivamo šta vas ''koči'', gde vam je teško, ali
+							potreba, zajedno otkrivamo šta vas &apos;koči&apos;, gde vam je teško, ali
 							i gde imate snagu koje, možda i niste bili svesni.
 						</p>
 						<p>
@@ -189,7 +189,7 @@ const SvetlanaBelancic = () => {
 					<div className="text-slate-700 text-lg">
 						<p>
 							Prvi susret je prilika da se upoznamo i zajedno pogledamo vašu
-							''temu'' ono što vas dovodi na terapiju, da podelite ono što vam
+							&apos;temu&apos; ono što vas dovodi na terapiju, da podelite ono što vam
 							je važno, kao i da me pitate sve što vas zanima o radu i procesu.
 						</p>
 						<p>
