@@ -8,36 +8,43 @@ const MirjanaPajic = () => {
 
 	const questionsAndAnswers = [
 		{
-			question: "Sistemska porodična terapija — uključuje li individualni rad?",
+			question: "Sistemska porodična terapija uključuje li individualni rad?",
 			answer:
-				"Iako se naziva porodična sistemska terapija, ovaj pristup nije ograničen samo na rad sa celom porodicom. Može se vrlo uspešno primeniti i kada radim individualno sa vama, uzimajući u obzir vaš sistem — porodicu, odnose, prošlost, kontekst",
+				" Iako se naziva porodična sistemska terapija, ovaj pristup nije ograničen na rad sa celom porodicom. Vrlo uspešno se primenjuje i u individualnom radu, uzimajući u obzir vaš sistem porodicu, odnose, prošlost i kontekst.",
 		},
 		{
 			question: "Kako izgleda individualni sistemski rad?",
 			answer: [
-				"Prvo istražujemo vaš sistem — odnose koji su vam važni, dinamike u porodici, očekivanja, uloge koje ste preuzeli (svesno ili nesvesno). I bez da su svi članovi porodice prisutni, sistem 'živi' u vašem doživljaju — emocije, očekivanja, obrasci ponašanja koji su se razvili kroz odnose.",
-				"Zatim razmatramo vaš uticaj u sistemu — ono što radite, govorite, osećate i kako to utiče na odnose. U isto vreme istražujemo kako drugi članovi sistema (članovi porodice, partneri, bliski ljudi) utiču na vas.",
-				"Radimo na tome da identifikujemo obrasce — načine komunikacije, reakcije, uloge — koji su vas stezali, blokirali, stvarali napetost; i da onda uvodimo male, konkretne promene u vašem načinu komunikacije, granicama, emocionalnom izrazu.",
-				"Individualni rad može uključiti i da povremeno budu uključeni drugi članovi porodice ako želite — na sesijama ili u delovima procesa — ali nije uslov da rade svi da bi terapija bila efikasna.",
+				"U početku istražujemo vaš sistem: odnose koji su vam važni, dinamike u porodici, očekivanja i uloge koje ste (svesno ili nesvesno) preuzeli. Čak i bez prisustva svih članova porodice, sistem “živi” u vašem doživljaju kroz emocije, očekivanja i obrasce ponašanja.",
+				"Zatim razmatramo vaš uticaj u sistemu kako vaše misli, osećanja i postupci utiču na druge, i obrnuto. Radimo na prepoznavanju obrazaca koji su vas zadržavali u napetosti i uvodimo male, konkretne promene u komunikaciji, granicama i emocionalnom izražavanju.",
+				"Po potrebi, u proces se mogu povremeno uključiti i drugi članovi porodice ali to nije uslov da terapija bude delotvorna.",
 			],
 		},
 		{
 			question: "Zašto je individualni pristup koristan?",
 			answer: [
-				"Daje siguran prostor da razgovarate o osećanjima i mislima koje možda ne biste lako podelili u porodici.",
-				"Može vam pomoći da bolje razumete svoje mesto i uloge u porodici, da vidite obrasce iz svog iskustva, pa i iz prošlosti, koji su formirali vaše reakcije.",
-				"Može vam pomoći da razvijete veštine — slušanja sebe, izražavanja osećanja, postavljanja granica — koje će kasnije koristiti i u odnosima sa drugima.",
-				"Budući da terapija uzima u obzir vaš širi kontekst (porodica, kultura, istorija), čak i kada radimo sami, možete otkriti uzroke i veze koje možda do sada niste videli. To omogućava dublju, trajniju promenu.",
+				"Pruža siguran prostor da govorite o onome što možda ne biste podelili s drugima.",
+				"Pomaže da bolje razumete svoje uloge u porodici i obrasce koji su se formirali kroz iskustva i prošlost.",
+				"Razvijate veštine slušanja sebe, izražavanja osećanja i postavljanja granica.",
+				"Kroz razumevanje šireg konteksta (porodice, kulture, istorije), otkrivate dublje uzroke i veze, što vodi trajnoj promeni.",
 			],
 		},
 		{
 			question: "Kako izgleda terapijski proces?",
 			answer: [
-				"Sesije se održavaju redovno – uživo ili online (u trajanju od jednog sata) na koji način vama odgovara.",
-				"U početku obično razgovaramo o onome što vas je dovelo do trenutka kada ste rekli 'želim nešto promeniti'.",
-				"Postavljamo zajedničke ciljeve – šta želimo da promenimo, koje odnose popravimo, šta da naučimo.",
-				"Tokom terapije koristim različite tehnike – slušanje, vođene razgovore, interaktivne vežbe, zadatke za kod kuće – sve u cilju da ono što radimo u sesiji ima stvarni uticaj i van nje.",
-				"Napredovanje nije uvek linearno – biće uspona i padova. Moje obećanje je da ću biti sa vama/sa vama podrška dok ne počnete da osećate razliku.",
+				"Sesije se održavaju uživo ili online, u trajanju od jednog sata onako kako vama najviše odgovara.",
+				"Na početku razgovaramo o onome što vas je dovelo do trenutka kada ste rekli: „Želim nešto da promenim.“",
+				"Zajedno postavljamo ciljeve: šta želimo da razumemo, promenimo ili osnažimo.",
+				"Tokom terapije koristim različite tehnike vođene razgovore, vežbe, refleksiju i zadatke između sesija kako bi ono što radimo imalo stvarni uticaj i izvan terapijskog prostora.",
+				"Napredak nije uvek linearan. Biće uspona i padova.",
+				"Moje obećanje je da ću biti uz vas podrška dok ne osetite da se promene zaista događaju.",
+			],
+		},
+		{
+			question: "Vaša hrabrost je važna",
+			answer: [
+				"Odlučiti se na terapiju znači izabrati rast, promenu i bliskost.",
+				"To je odluka da obnovite poverenje, da izgovorite ono što je teško, i da sebi dozvolite da budete ono što jeste sa svim svojim nedoumicama, strahovima i nadama.",
 			],
 		},
 	];
@@ -60,6 +67,9 @@ const MirjanaPajic = () => {
 							<p className="text-xl lg:text-2xl text-white font-semibold max-w-xl leading-relaxed">
 								Ja sam Mirjana Pajić, majka, pedagog, porodični psihoterapeut,
 								regresoterapeut, kouč psihosomatike.
+							</p>
+							<p className="text-xl lg:text-2xl text-white font-semibold max-w-xl leading-relaxed">
+								Filantrop, ljubitelj ljudi i onog dobrog u njima.
 							</p>
 							<button className="bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">
 								<Link href="/kontakt?psych=Mirjana%20Pajić">
@@ -91,10 +101,11 @@ const MirjanaPajic = () => {
 						Ja sam Mirjana Pajić, majka, pedagog, porodični psihoterapeut,
 						regresoterapeut, kouč psihosomatike.
 					</p>
-					<button className="mb-4 bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">
-						<Link href="/kontakt?psych=Mirjana%20Pajić">Kontaktiraj me</Link>
-					</button>
-
+					<Link href="/kontakt?psych=Mirjana%20Pajić">
+						<button className="mb-4 bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">
+							Kontaktiraj me
+						</button>
+					</Link>
 					<div className="relative w-full max-w-md mx-auto">
 						<div className="absolute inset-0 bg-gradient-to-br from-hv-green to-hv-gold rounded-2xl transform rotate-3"></div>
 						<div className="relative bg-white p-2 rounded-2xl shadow-xl">
@@ -127,25 +138,34 @@ const MirjanaPajic = () => {
 							</span>
 						</p>
 						<p>
+							Edukaciju iz{" "}
 							<span className="font-semibold text-hv-green">
-								Sistemsku porodičnu psihoterapiju
+								sistemske porodične psihoterapije
 							</span>{" "}
-							sam završila – U OKVIRU ASOCIJACIJA SISTEMSKIH TERAPEUTA EVROPSKI
-							AKREDITOVAN INSTITUTA ZA EDUKACIJU IZ PSIHOTERAPIJE (EAPTT) ČLAN
-							KOMORE TRENING INSTITUTA EVROPSKE ASOCIJACIJE ZA PORODIČNU
-							TERAPIJU (EFTA -TTC) BEOGRAD, SRBIJA
+							pohađala sam u okviru{" "}
+							<span className="font-semibold text-hv-green">
+								Asocijacije sistemskih terapeuta
+							</span>{" "}
+							evropski akreditovanog instituta za edukaciju iz psihoterapije
+							(EAPTT), člana{" "}
+							<span className="font-semibold text-hv-green">
+								Komore trening instituta Evropske asocijacije za porodičnu
+								terapiju (EFTA–TTC)
+							</span>{" "}
+							u Beogradu.
 						</p>
+
 						<p>
-							<span className="font-semibold">
-								Nehipnotičku regresoterapiju
+							Završila sam i{" "}
+							<span className="font-semibold text-hv-green">
+								nehimnotičku regresoterapiju
 							</span>{" "}
-							po metodi Patrika Balinta
-						</p>
-						<p>
-							<span className="font-semibold">
-								Osnovnu i naprednu psihosomatiku
+							po metodi Patrika Balinta, kao i{" "}
+							<span className="font-semibold text-hv-green">
+								osnovni i napredni nivo psihosomatike
 							</span>{" "}
-							kao za koča psihosomatike kod Vesne Danilovac ICI, Berlin
+							kod Vesne Danilovac (ICI, Berlin), gde sam stekla zvanje kouča
+							psihosomatike.
 						</p>
 					</div>
 				</div>
@@ -154,26 +174,40 @@ const MirjanaPajic = () => {
 			<section className="bg-hv-beige-1 mx-auto px-6 p-16 space-y-2">
 				<div className="max-w-[1200px] mx-auto text-center">
 					<h2 className="text-5xl font-semibold text-hv-green font-beau text-center my-2">
-						Moj pristup
+						Moj pristup i vrednosti
 					</h2>
 					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
-					<div className="text-slate-700 text-lg leading-relaxed space-y-4">
+					<div className="text-slate-700 text-lg leading-relaxed space-y-4 max-w-3xl mx-auto text-left">
 						<p className="font-semibold text-hv-green">
 							Verujem da svako ZASLUŽUJE DA BUDE DOBRO (u harmoniji sa sobom)
 						</p>
 						<p>
-							Ljubazno, nežno, strpljivo, podržavajući i bez osuđivanja — moj
-							cilj je da kreiram prostor u kome se osećate prihvaćenim baš
-							takvim kakvi jeste, sigurno, podržano, slobodnim da govorite i da
-							budete slušani.
+							Ljubazno, nežno, strpljivo, podržavajuće i bez osuđivanja, trudim
+							se da stvorim prostor u kome ćete se osećati{" "}
+							<span className="font-semibold text-hv-green">
+								prihvaćeno, sigurno i slobodno
+							</span>{" "}
+							da govorite i budete saslušani.
 						</p>
 						<p>
 							Terapija je podrška, samo da se oslušneš, čuješ i odlučiš kuda
 							dalje i onda polako rešavaš ono za šta trenutno imaš snage… i tako
 							kreneš kroz proces…veruj nije jednostavno.
 						</p>
-						<p className="font-semibold">
-							Promena je moguća — korak po korak, tempom koji odgovara vama.
+						<p>
+							Terapiju vidim kao podršku priliku da se oslušnete, čujete i
+							odlučite kuda dalje. Promena nije jednostavna, ali je{" "}
+							<span className="font-semibold text-hv-green">moguća</span> korak
+							po korak, tempom koji vama odgovara.
+						</p>
+						<p>
+							{" "}
+							Svoj posao psihoterapeuta obavljam s ljubavlju, jer verujem da se{" "}
+							<span className="font-semibold text-hv-green">
+								{" "}
+								s ljubavlju
+							</span>{" "}
+							može mnogo, a bez nje ništa.
 						</p>
 					</div>
 				</div>
@@ -182,37 +216,42 @@ const MirjanaPajic = () => {
 			<section className="mx-auto px-6 p-16 space-y-2 ">
 				<div className="max-w-[1200px] mx-auto text-center">
 					<h2 className="text-5xl font-semibold text-hv-green font-beau my-2">
-						Moj rad
+						Sistemski pristup
 					</h2>
 					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
 					<div className="text-slate-700 text-lg leading-relaxed space-y-2 text-left max-w-3xl mx-auto">
-						<p className="font-semibold text-hv-green">
-							Posao psihoterapeuta obavljam s ljubavlju verući da sa ljubavlju
-							možeš puno, a bez nje ništa.
+						<p>
+							U svom radu primenjujem{" "}
+							<span className="font-semibold text-hv-green">
+								sistemski pristup porodičnoj terapiji
+							</span>{" "}
+							. To znači da ne posmatram samo problem pojedinca, već celu sliku
+							odnose, dinamike i obrasce koji se stvaraju među ljudima.
 						</p>
 						<p>
-							U svom radu koristim sistemski pristup porodičnoj terapiji — to
-							znači da ne gledam samo problem jedne osobe, nego vidim celu
-							sliku.
+							Verujem da{" "}
+							<span className="font-semibold text-hv-green">
+								svaki glas zaslužuje da bude saslušan
+							</span>{" "}
+							i onaj najmlađi, i onaj koji se povukao, i onaj koji najglasnije
+							govori.
 						</p>
 						<p>
-							Verujem da svaki glas zaslužuje da bude saslušan — i onaj
-							najmlađi, i onaj koji se povukao, i onaj najbučniji.
-						</p>
-						<p className="font-semibold">
-							Sistemska porodična terapija zasniva se na uverenju da smo svi
-							više nego suma svojih pojedinačnih delova.
-						</p>
-
-						<p className="font-semibold">
-							Naši odnosi sa porodicom, partnerom, prijateljima i sa našom
-							prošlošću predstavljaju činilac koji oblikuje kako se osećamo,
-							kako reagujemo i kako komuniciramo.
-						</p>
-
-						<p className="font-semibold">
-							Ne radi se samo o tome šta vi osećate, već i o tome kako ono što
-							osećate utiče na one koji su vam bliski — i obrnuto.
+							Sistemska porodična terapija polazi od ideje da smo svi{" "}
+							<span className="font-semibold text-hv-green">
+								više od zbira svojih delova
+							</span>{" "}
+							. Naši odnosi — sa porodicom, partnerom, prijateljima i prošlošću
+							— oblikuju kako se osećamo, reagujemo i komuniciramo. Ne radi se
+							samo o tome{" "}
+							<span className="font-semibold text-hv-green">
+								šta vi osećate
+							</span>{" "}
+							, već i o tome{" "}
+							<span className="font-semibold text-hv-green">
+								kako to utiče na one koje volite
+							</span>{" "}
+							i obrnuto.
 						</p>
 					</div>
 				</div>

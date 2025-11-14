@@ -20,11 +20,11 @@ const SvetlanaBelancic = () => {
 								Psihoterapija psihosomatike — međunarodna asocijacija za
 								integralnu kauzalnu psihoterapiju
 							</p>
-							<button className="bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">
-								<Link href="/kontakt?psych=Svetlana%20Belan%C4%8Di%C4%87">
+							<Link href="/kontakt?psych=Svetlana%20Belan%C4%8Di%C4%87">
+								<button className="bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">
 									Kontaktiraj me
-								</Link>
-							</button>
+								</button>
+							</Link>
 						</div>
 
 						<div className="absolute right-0 bottom-0 w-[70%] h-[150dvh]">
@@ -145,8 +145,8 @@ const SvetlanaBelancic = () => {
 						</p>
 						<p>
 							Kroz razgovor, osvešćivanje i istraživanje vaših emocija i
-							potreba, zajedno otkrivamo šta vas &apos;koči&apos;, gde vam je teško, ali
-							i gde imate snagu koje, možda i niste bili svesni.
+							potreba, zajedno otkrivamo šta vas &apos;koči&apos;, gde vam je
+							teško, ali i gde imate snagu koje, možda i niste bili svesni.
 						</p>
 						<p>
 							U terapiji ne nudim “rešenja”, već pristup koji vas osnažuje da
@@ -189,8 +189,9 @@ const SvetlanaBelancic = () => {
 					<div className="text-slate-700 text-lg">
 						<p>
 							Prvi susret je prilika da se upoznamo i zajedno pogledamo vašu
-							&apos;temu&apos; ono što vas dovodi na terapiju, da podelite ono što vam
-							je važno, kao i da me pitate sve što vas zanima o radu i procesu.
+							&apos;temu&apos; ono što vas dovodi na terapiju, da podelite ono
+							što vam je važno, kao i da me pitate sve što vas zanima o radu i
+							procesu.
 						</p>
 						<p>
 							To je prilika da osetite da li vam prija moj pristup i stil rada.
