@@ -71,11 +71,11 @@ const MirjanaPajic = () => {
 							<p className="text-xl lg:text-2xl text-white font-semibold max-w-xl leading-relaxed">
 								Filantrop, ljubitelj ljudi i onog dobrog u njima.
 							</p>
-							<button className="bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">
-								<Link href="/kontakt?psych=Mirjana%20Pajić">
+							<Link href="/kontakt?psych=Mirjana%20Pajić">
+								<button className="bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">
 									Kontaktiraj me
-								</Link>
-							</button>
+								</button>
+							</Link>
 						</div>
 
 						<div className="absolute right-0 bottom-0 w-[70%] h-[150dvh]">

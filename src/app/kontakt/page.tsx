@@ -119,7 +119,7 @@ const ContactPage: React.FC = () => {
 
 	return (
 		<div className="min-h-screen pt-[120px] sm:pt-[100px] lg:pt-[120px] py-6 sm:py-8 lg:py-12 px-4 bg-gradient-to-br from-hv-green/40 to-hv-beige-6">
-			<div className="max-w-7xl mx-auto">
+			<div className="max-w-[1200px] mx-auto">
 				<div className="text-center mb-6 sm:mb-8">
 					<h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-hv-green font-beau mb-2 sm:mb-3">
 						Kontaktirajte Nas

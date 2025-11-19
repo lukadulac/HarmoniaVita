@@ -100,19 +100,20 @@ const Header = () => {
 									Usluge
 								</Link>
 							</li>
+							*/}
 							<li>
 								<Link
-									href="/blog"
+									href="/psiholoske-teme"
 									className={`relative text-lg font-semibold transition-colors duration-200
 										after:content-[''] after:absolute after:h-[2px] after:bg-hv-green-text after:left-0 after:-bottom-1 after:transition-all after:duration-300
-										${isActive('/blog') 
+										${isActive('/psiholoske-teme') 
 											? 'text-hv-green-text after:w-full' 
 											: 'text-gray-700 hover:text-hv-green-text after:w-0 hover:after:w-full'
 										}`}
 								>
-									Blog
+									Psiholoske teme
 								</Link>
-							</li> */}
+							</li> 
 							<li>
 								<Link
 									href="/kontakt"
@@ -202,14 +203,15 @@ const Header = () => {
 					>
 						Usluge
 					</Link>
+					*/}
 					<Link
-						href="/blog"
+						href="/psiholoske-teme"
 						onClick={closeMenu}
-						className={`transition-colors ${isActive('/blog') ? 'text-hv-green-dark font-bold' : 'text-gray-700 hover:text-hv-green-dark'
+						className={`transition-colors ${isActive('/psiholoske-teme') ? 'text-hv-green-dark font-bold' : 'text-gray-700 hover:text-hv-green-dark'
 							}`}
 					>
-						Blog
-					</Link> */}
+						Psiholoske teme
+					</Link> 
 					<Link
 						href="/kontakt"
 						onClick={closeMenu}
