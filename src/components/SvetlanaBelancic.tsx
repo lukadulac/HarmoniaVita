@@ -29,7 +29,7 @@ const SvetlanaBelancic = () => {
 						Psiholog i geštalt terapeut
 					</p>
 					<a
-						className="cursor-pointer text-hv-green text-sm"
+						className="cursor-pointer text-hv-green text-sm underline"
 						href="tel:+381 63 8952992"
 					>
 						+381 63 8952992

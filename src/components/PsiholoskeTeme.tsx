@@ -7,7 +7,7 @@ const PsiholoskeTeme = () => {
 		setOpen(open === index ? null : index);
 	};
 
-	const topics = [
+	const services = [
 		{
 			theme: "Kratka istorija pogleda na čoveka",
 			themeDecs: [
@@ -76,10 +76,10 @@ const PsiholoskeTeme = () => {
 			<section className="pt-12 pb-8 bg-hv-beige-1 w-full text-center">
 				<div className="max-w-[1200px] mx-auto space-y-2 px-6">
 					<h2 className="text-5xl font-beau text-hv-green font-semibold ">
-						Psiholoske teme
+						USLUGE KOJE PRUŽAMO
 					</h2>
-					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
-					<div className="mb-4 space-y-2">
+					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green mb-10" />
+					{/* <div className="mb-4 space-y-2">
 						<p>
 							Koliko puta ste osetili da vas nešto „boli“, a lekari kažu da je
 							sve u redu?
@@ -99,18 +99,18 @@ const PsiholoskeTeme = () => {
 							Tada telo polako počinje da{" "}
 							<span className="font-semibold">govori umesto nas.</span>
 						</p>
-					</div>
+					</div> */}
 
-					{topics.map((topic, index) => (
+					{services.map((service, index) => (
 						<div
 							key={index}
-							className="mt-8 mx-auto border max-w-[600px] border-hv-green rounded-md p-6"
+							className="mt-4 mx-auto border max-w-[1200px] border-hv-green rounded-md p-6"
 						>
 							<h2
 								onClick={() => toggle(index)}
 								className="text-2xl font-semibold text-hv-green  cursor-pointer  flex items-center justify-between  gap-3"
 							>
-								{topic.theme}
+								{service.theme}
 								<Image
 									title="Dropdown Arrow"
 									src="/icons/dropdown-arrow.svg"
@@ -130,7 +130,7 @@ const PsiholoskeTeme = () => {
 								}`}
 							>
 								<div>
-									{topic.themeDecs.map((desc, descIndex) => (
+									{service.themeDecs.map((desc, descIndex) => (
 										<p
 											key={descIndex}
 											className="mb-4 pl-4"

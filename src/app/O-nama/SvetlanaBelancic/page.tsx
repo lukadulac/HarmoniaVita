@@ -71,7 +71,7 @@ const SvetlanaBelancic = () => {
 				</div>
 			</section>
 
-			<section className="p-16 rounded-lg flex flex-col md:flex-row gap-6 items-center">
+			<section className="py-4 md:p-16 rounded-lg flex flex-col md:flex-row gap-6 items-center">
 				<div className="max-w-[1200px] mx-auto px-6 w-full space-y-4">
 					<h2 className="text-5xl font-semibold mb-2 text-hv-green font-beau text-center">
 						O meni
@@ -139,7 +139,7 @@ const SvetlanaBelancic = () => {
 					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
 					<div className="text-slate-700 text-lg">
 						<p>
-							Geštalt terapija je pravac koji stavlja fokus na ovde i sada – na
+							Geštalt terapija je pravac koji stavlja fokus na ovde i sada na
 							to kako doživljavate sebe, odnose i svet oko sebe. Ne bavimo se
 							samo “problemima” bavimo se vama kao celinom.{" "}
 						</p>

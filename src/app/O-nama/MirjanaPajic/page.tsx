@@ -158,14 +158,16 @@ const MirjanaPajic = () => {
 						<p>
 							Završila sam i{" "}
 							<span className="font-semibold text-hv-green">
-								nehimnotičku regresoterapiju
+								nehipnotičku regresoterapiju
 							</span>{" "}
 							po metodi Patrika Balinta, kao i{" "}
 							<span className="font-semibold text-hv-green">
 								osnovni i napredni nivo psihosomatike
 							</span>{" "}
-							kod Vesne Danilovac (ICI, Berlin), gde sam stekla zvanje kouča
-							psihosomatike.
+							kod Vesne Danilovac (ICI, Berlin), gde sam stekla zvanje{" "}
+							<span className="font-semibold text-hv-green">
+								kouča psihosomatike.
+							</span>
 						</p>
 					</div>
 				</div>
@@ -241,8 +243,8 @@ const MirjanaPajic = () => {
 							<span className="font-semibold text-hv-green">
 								više od zbira svojih delova
 							</span>{" "}
-							. Naši odnosi — sa porodicom, partnerom, prijateljima i prošlošću
-							— oblikuju kako se osećamo, reagujemo i komuniciramo. Ne radi se
+							. Naši odnosi sa porodicom, partnerom, prijateljima i prošlošću
+							 oblikuju kako se osećamo, reagujemo i komuniciramo. Ne radi se
 							samo o tome{" "}
 							<span className="font-semibold text-hv-green">
 								šta vi osećate

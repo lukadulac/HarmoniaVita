@@ -74,7 +74,7 @@ const AboutUs = () => {
 								pravi kontakt sa sobom
 							</span>{" "}
 							. Tada započinje i nastavlja se naš put ka rastu i razvoju, ka{" "}
-							<span className="font-semibold text-hv-green">harmoniji</span>i{" "}
+							<span className="font-semibold text-hv-green">harmoniji</span>{" "}i{" "}
 							<span className="font-semibold text-hv-green">
 								unutrašnjem miru
 							</span>{" "}
@@ -100,7 +100,7 @@ const AboutUs = () => {
 							</span>
 						</p>
 						<p>
-							Ako osećate da je vreme za promenu, posetite naš{" "}
+							Ako osećate da je vreme za promene, posetite naš{" "}
 							<span className="font-semibold text-hv-green">
 								Centar HarmonijaVita
 							</span>{" "}

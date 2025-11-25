@@ -29,7 +29,7 @@ const MirjanaPajic = () => {
 						Majka, pedagog, porodični psihoterapet, regresoterapeut, kouč
 						psihosomatike
 					</p>
-					<p className="text-hv-green text-nowrap text-end text-sm">
+					<p className="text-hv-green text-nowrap text-end text-sm underline">
 						<a href="tel:+381 62 394763">+381 62 394763 </a>
 					</p>
 				</div>
