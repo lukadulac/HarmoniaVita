@@ -40,7 +40,7 @@ const Footer = () => {
 					</div>
 
 					{/* Nav */}
-					<nav className="grid grid-cols-3 sm:flex gap-2 sm:gap-1 text-nowrap text-slate-800">
+					<nav className="grid grid-cols-3 sm:flex gap-1 sm:gap-4 text-nowrap text-gray-700 font-semibold">
 						<Link className="hover:text-hv-green transition-colors" href="/">
 							Početna
 						</Link>
