@@ -40,7 +40,7 @@ const Footer = () => {
 					</div>
 
 					{/* Nav */}
-					<nav className="grid grid-cols-2 sm:flex gap-4 sm:gap-6 text-slate-800">
+					<nav className="grid grid-cols-3 sm:flex gap-2 sm:gap-1 text-nowrap text-slate-800">
 						<Link className="hover:text-hv-green transition-colors" href="/">
 							Početna
 						</Link>
@@ -53,9 +53,9 @@ const Footer = () => {
 
 						<Link
 							className="hover:text-hv-green transition-colors"
-							href="/kontakt"
+							href="/psiholoske-teme"
 						>
-							Kontakt
+							Psihološke teme
 						</Link>
 					</nav>
 
@@ -69,7 +69,7 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<hr className="my-8 border-hv-beige-3/60" />
+				<hr className="my-8 border-hv-beige-3" />
 
 				<div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
 					<p className="text-sm text-slate-700">
