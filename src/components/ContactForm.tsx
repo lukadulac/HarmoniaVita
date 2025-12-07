@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import { Send, Loader2, CheckCircle } from "lucide-react";
 import DropDownSelect from "@/components/DropDownSelect";
 import { useSearchParams } from "next/navigation";
