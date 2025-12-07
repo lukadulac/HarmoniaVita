@@ -1,6 +1,6 @@
-import React, { Suspense, useEffect, useState } from "react";
+"use client";
+import React, { Suspense } from "react";
 import ContactForm from "@/components/ContactForm";
-
 
 const ContactPage: React.FC = () => {
 	return (
@@ -16,15 +16,17 @@ const ContactPage: React.FC = () => {
 				</div>
 
 				<div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
-					<Suspense fallback={
-						<div className="bg-white rounded-xl lg:rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8">
-							<div className="animate-pulse space-y-4">
-								<div className="h-12 bg-slate-200 rounded"></div>
-								<div className="h-12 bg-slate-200 rounded"></div>
-								<div className="h-32 bg-slate-200 rounded"></div>
+					<Suspense
+						fallback={
+							<div className="bg-white rounded-xl lg:rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8">
+								<div className="animate-pulse space-y-4">
+									<div className="h-12 bg-slate-200 rounded"></div>
+									<div className="h-12 bg-slate-200 rounded"></div>
+									<div className="h-32 bg-slate-200 rounded"></div>
+								</div>
 							</div>
-						</div>
-					}>
+						}
+					>
 						<ContactForm />
 					</Suspense>
 
