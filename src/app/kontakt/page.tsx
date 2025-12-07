@@ -1,5 +1,6 @@
 "use client";
-import React, { Suspense } from "react";
+
+import { Suspense } from "react";
 import ContactForm from "@/components/ContactForm";
 
 const ContactPage: React.FC = () => {
