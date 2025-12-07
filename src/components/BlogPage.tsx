@@ -61,7 +61,7 @@ const BlogPage = () => {
 			title: "Penzionisanje i starenje",
 			category: "Psihološke teme",
 			author: "Svetlana Belančić",
-			excerpt: "Vreme preispitivanja, ali i novih mogućnosti ",
+			excerpt: "Vreme preispitivanja, ali i novih mogućnosti",
 			content: [
 				"Odlazak u penziju predstavlja veliku životnu promenu. Za mnoge ljude ona se ne doživljava samo kao završetak radne karijere, već i kao gubitak uloge koja je decenijama bila deo ličnog i društvenog identiteta. Uloga zaposlenog neretko nam je davala osećaj svrhe, pripadnosti i korisnosti. Zato ne čudi što ovaj period može biti doživljen kao kriza, vreme preispitivanja i prilagođavanja novim okolnostima koje utiču na celokupan život.",
 				"**Kako doživljavamo starost?**",
@@ -70,7 +70,7 @@ const BlogPage = () => {
 				"*„Da li sam i dalje potreban svojoj porodici i društvu?“*",
 				"*„Da li ljudi polako zaboravljaju na mene?“*",
 				"*„Da li sam i dalje vredan, iako više ne radim?“*",
-				"Finansijska nesigurnost, briga o zdravlju, odlazak bliskih osoba – sve to može biti dodatni izvor stresa. Prirodno je da se ponekad osećamo preplavljeno mislima o prolaznosti i životnim gubicima.",
+				"Finansijska nesigurnost, briga o zdravlju, odlazak bliskih osoba  sve to može biti dodatni izvor stresa. Prirodno je da se ponekad osećamo preplavljeno mislima o prolaznosti i životnim gubicima.",
 				"**Uloga okruženja i društva**",
 				"Naš doživljaj starosti zavisi od ličnih stavova, ali i od toga kako društvo posmatra starije ljude. Nekada se starost povezivala sa teretom i nemoći. Danas, sve više se govori o starijem dobu kao o fazi koja može doneti nove mogućnosti, lični rast, nove uloge i izgradnju identiteta koji nije vezan isključivo za radno mesto.",
 				"**Da li ćemo samo „čekati dane“ ili ćemo ih ispuniti?**",
@@ -214,7 +214,7 @@ const BlogPage = () => {
 
 								<button
 									onClick={() => handleReadMore(post)}
-									className="inline-flex items-center gap-2 bg-hv-green hover:bg-hv-green/90 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300"
+									className="flex items-center gap-2 bg-hv-green hover:bg-hv-green/90 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300"
 								>
 									Pročitaj više
 									<ArrowRight className="w-5 h-5" />
