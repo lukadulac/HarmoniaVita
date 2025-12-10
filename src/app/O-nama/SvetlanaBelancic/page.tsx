@@ -139,9 +139,9 @@ const SvetlanaBelancic = () => {
 					<hr className="my-4 border border-spacing-1 mx-auto w-1/2 border-hv-green" />
 					<div className="text-slate-700 text-lg">
 						<p>
-							Geštalt terapija je pravac koji stavlja fokus na ovde i sada na
-							to kako doživljavate sebe, odnose i svet oko sebe. Ne bavimo se
-							samo “problemima” bavimo se vama kao celinom.{" "}
+							Geštalt terapija je pravac koji stavlja fokus na ovde i sada na to
+							kako doživljavate sebe, odnose i svet oko sebe. Ne bavimo se samo
+							“problemima” bavimo se vama kao celinom.{" "}
 						</p>
 						<p>
 							Kroz razgovor, osvešćivanje i istraživanje vaših emocija i
@@ -149,12 +149,13 @@ const SvetlanaBelancic = () => {
 							teško, ali i gde imate snagu koje, možda i niste bili svesni.
 						</p>
 						<p>
-							U terapiji ne nudim “rešenja”, već pristup koji vas osnažuje da
-							sami pronađete ono što je za vas dobro, prihvatljivo i moguće.
+							U terapiji ne nudim &apos;rešenja&apos;, već pristup koji vas
+							osnažuje da sami pronađete ono što je za vas dobro, prihvatljivo i
+							moguće.
 						</p>
 						<p>
 							Verujem u proces koji je ličan, neformalan i duboko ljudski. U
-							centru mog rada ste vi – sa svim svojim pitanjima, dilemama,
+							centru mog rada ste vi sa svim svojim pitanjima, dilemama,
 							ranjivostima i potencijalima.
 						</p>
 					</div>
