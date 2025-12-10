@@ -65,7 +65,7 @@ const BlogPage = () => {
 			content: [
 				"Odlazak u penziju predstavlja veliku životnu promenu. Za mnoge ljude ona se ne doživljava samo kao završetak radne karijere, već i kao gubitak uloge koja je decenijama bila deo ličnog i društvenog identiteta. Uloga zaposlenog neretko nam je davala osećaj svrhe, pripadnosti i korisnosti. Zato ne čudi što ovaj period može biti doživljen kao kriza, vreme preispitivanja i prilagođavanja novim okolnostima koje utiču na celokupan život.",
 				"**Kako doživljavamo starost?**",
-				"Starost se najčešće određuje prema godinama u Srbiji i većini zemalja osobe iznad 65 godina smatraju se starijim. U ovom periodu dolazi do postepenog opadanja fizioloških funkcija, što mnogima teško pada. Odraz u ogledalu postaje podsetnik vremena koje prolazi.",
+				"Starost se najčešće određuje prema godinama. U Srbiji i većini zemalja osobe iznad 65 godina smatraju se starijim. U ovom periodu dolazi do postepenog opadanja fizioloških funkcija, što mnogima teško pada. Odraz u ogledalu postaje podsetnik vremena koje prolazi.",
 				"Javljaju se pitanja:",
 				"*„Da li sam i dalje potreban svojoj porodici i društvu?“*",
 				"*„Da li ljudi polako zaboravljaju na mene?“*",
@@ -78,7 +78,7 @@ const BlogPage = () => {
 				"@učimo da uživamo u svakom danu,@",
 				"@koristimo iskustvo i mudrost koje smo godinama sticali,@",
 				"@ispunjavamo želje koje smo stalno odlagali „za penziju“,@",
-				"@otkrivamo nove interese, hobije i odnose.@",
+				"@otkrivamo nova interesovanja, hobije i odnose.@",
 				"Neki se na penziju pripremaju godinama, a nekima je potrebno više vremena da prihvate promenu. I jedno i drugo je potpuno u redu. Ništa se ne dešava preko noći. Dajte sebi pravo da vam bude teško ali i da učinite nešto dobro za sebe.",
 				"**Kada potražiti podršku?**",
 				"Ako osetite da se nalazite u fazi prilagođavanja koju teško prevazilazite, ako ste tužni, razočarani, bezvoljni, povučeni ili vam se čini da ne vidite izlaz, psihoterapija može biti dragocena podrška. Razgovor sa stručnjakom pomaže da sagledate situaciju iz drugačije perspektive, da razumete svoje emocije i da ponovo pronađete smisao i zadovoljstvo u godinama u kojima ste.",
