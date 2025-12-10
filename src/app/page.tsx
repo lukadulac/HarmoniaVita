@@ -55,11 +55,11 @@ const HomePage = () => {
 						Dobrodošli u Psihološki centar HarmonijaVita
 					</h1>
 					<p className="text-lg text-slate-700 max-w-2xl mb-2">
-						Mesto gde počinje promena – uz podršku za ono što jeste i što želite
+						Mesto gde počinje promena uz podršku za ono što jeste i što želite
 						da postanete.
 					</p>
 					<p className="text-lg text-slate-700 max-w-2xl">
-						Stručna podrška za rast i razvoj, za promenu, zdravije, odnose i
+						Stručna podrška za rast i razvoj, za promenu, zdravije odnose i
 						ispunjen život.
 					</p>
 					<button className="bg-hv-green text-white px-4 py-2 rounded-md mt-4 transition-all duration-300 hover:bg-hv-green-hover">

@@ -39,6 +39,7 @@ const AboutUs = () => {
 								</li>
 								<li>individualnu psihoterapiju za odrasle,</li>
 								<li>porodičnu i partnersku terapiju.</li>
+								<li>Online terapija</li>
 							</ul>
 							<p>
 								Verujemo da istinska promena počinje kroz autentičan odnos i

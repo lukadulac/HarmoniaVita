@@ -32,7 +32,7 @@ const Footer = () => {
 							/>
 						</div>
 						<div>
-							<p className="text-xl font-beau text-hv-green">HarmoniaVita</p>
+							<p className="text-xl font-beau text-hv-green">HarmonijaVita</p>
 							<p className="text-sm text-slate-700">
 								Psihoterapija i savetovanje
 							</p>
