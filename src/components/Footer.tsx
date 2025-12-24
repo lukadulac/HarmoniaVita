@@ -75,7 +75,7 @@ const Footer = () => {
 					<p className="text-sm text-slate-700">
 						&copy; {new Date().getFullYear()} HarmonijaVita. Sva prava zadržana.
 					</p>
-					<p className="text-sm text-slate-700">Developed & designed by LuxWorks</p>
+					<p className="text-sm text-slate-700">Developed & designed by <a className="underline hover:text-hv-green" href="https://luxworks.business/">LuxWorks</a> </p>
 
 					<div className="text-sm text-slate-700 space-y-1">
 						<p className="font-medium text-hv-green">Lokacija</p>
