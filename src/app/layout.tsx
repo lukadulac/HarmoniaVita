@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 		address: false,
 		telephone: false,
 	},
-	metadataBase: new URL("https://www.harmonijavita.com/"), 
+	metadataBase: new URL("https://www.harmonijavita.com/"),
 	alternates: {
 		canonical: "/",
 	},
@@ -75,9 +75,7 @@ export const metadata: Metadata = {
 		shortcut: "/HarmoniaVitaLogo.png",
 		apple: "/HarmoniaVitaLogo.png",
 	},
-	verification: {
-		google: "google-site-verification=ztLtTFsV-74IwIRqLBM7quYmo_QFL4E-Q3jqA9XUsuc", 
-	},
+	
 };
 
 export default function RootLayout({
