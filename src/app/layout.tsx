@@ -76,7 +76,7 @@ export const metadata: Metadata = {
 		apple: "/HarmoniaVitaLogo.png",
 	},
 	verification: {
-		google: "google-site-verification: google0a45e00c7dd66d4e.html", 
+		google: "google-site-verification=ztLtTFsV-74IwIRqLBM7quYmo_QFL4E-Q3jqA9XUsuc", 
 	},
 };
 
